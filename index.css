@@ -59,7 +59,7 @@ main {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .heading1:hover {
@@ -108,5 +108,5 @@ main {
   display: flex;
   padding-left: 24px;
   justify-content: space-between;
-  padding-top: 10;
+  padding-top: 10px;
 }
