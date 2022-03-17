@@ -4,14 +4,16 @@
   "description": "This is the main-page of our porfolio.",
   "main": "index.js",
   "dependencies": {
+    "postcss": "^8.4.12"
+  },
+  "devDependencies": {
+    "@hint/connector-local": "^3.2.16",
     "hint": "^6.1.10",
-    "postcss": "^8.4.12",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
