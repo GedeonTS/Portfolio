@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is the main-page of our porfolio.",
+  "main": "index.js",
+  "dependencies": {
+    "hint": "^6.1.10",
+    "postcss": "^8.4.12",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GedeonTS/PORTFOLIO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GedeonTS/PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/GedeonTS/PORTFOLIO#readme"
+}
