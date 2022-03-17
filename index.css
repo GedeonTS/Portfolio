@@ -1,13 +1,15 @@
 body {
   background-color: #e5e5e5;
-  margin: 0px;
+  margin: 0;
   background-repeat: no-repeat;
 }
+
 main {
   background: url(IMG/header-background-mobile.png);
   border-bottom-left-radius: 100px;
   background-repeat: no-repeat;
 }
+
 .header1 {
   display: flex;
   align-items: center;
@@ -74,7 +76,7 @@ main {
   font-weight: 400;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .par1:hover {
@@ -91,7 +93,7 @@ main {
   line-height: 24px;
   color: #7f8cff;
   margin-left: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .par2:hover {
@@ -106,5 +108,5 @@ main {
   display: flex;
   padding-left: 24px;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 10;
 }
