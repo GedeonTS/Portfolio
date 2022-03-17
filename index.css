@@ -1,3 +1,13 @@
+body {
+  background-color: #e5e5e5;
+  margin: 0px;
+  background-repeat: no-repeat;
+}
+main {
+  background: url(IMG/header-background-mobile.png);
+  border-bottom-left-radius: 100px;
+  background-repeat: no-repeat;
+}
 .header1 {
   display: flex;
   align-items: center;
@@ -32,6 +42,8 @@
   height: 718px;
   width: 375px;
   background: url(IMG/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 10px;
   color: #172b4d;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -62,7 +74,7 @@
   font-weight: 400;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .par1:hover {
@@ -71,7 +83,7 @@
 }
 
 .par2 {
-  margin-top:12px;
+  margin-top: 12px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -79,7 +91,7 @@
   line-height: 24px;
   color: #7f8cff;
   margin-left: 24px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .par2:hover {
