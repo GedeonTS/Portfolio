@@ -110,3 +110,29 @@ main {
   justify-content: space-between;
   padding-top: 10px;
 }
+.works {
+  display: grid;
+  gap: 88px;
+}
+
+.cards {
+  background: url(IMG/header-background-mobile2.png);
+  height: 552px;
+  width: 327px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-left: 24px;
+  display: flex;
+}
+.card1{
+  padding-top: 16px;
+  justify-content:center;
+
+}
+.snapshot1 {
+  width: 295px;
+  height: 220px;
+}
