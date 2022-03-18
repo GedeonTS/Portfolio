@@ -180,10 +180,6 @@ main {
   text-align: left;
   color: #344563;
 }
-.li1 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6070ff;
-}
 
 .li2 a {
   text-decoration: none;
@@ -197,14 +193,9 @@ main {
   color: #7a869a;
 }
 
-.li2 a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6070ff;
-}
-
 .li3 a {
   text-decoration: none;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -212,6 +203,15 @@ main {
   letter-spacing: 0;
   text-align: left;
   color: #7a869a;
+}
+.li1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6070ff;
+}
+
+.li2 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6070ff;
 }
 
 .li3 a:hover {
@@ -245,7 +245,7 @@ main {
   padding: 12px;
   background-color: #ebebff;
   border-radius: 5px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -266,7 +266,7 @@ main {
   width: 110px;
   border: solid 1px #6070ff;
   border-radius: 10px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -317,7 +317,7 @@ main {
   width: 180px;
   border: solid 1px #6070ff;
   border-radius: 10px;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
@@ -335,7 +335,7 @@ main {
   display: flex;
   flex-direction: column;
   list-style: none;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -344,9 +344,10 @@ main {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
 .liss {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   background-color: #f7f7f9;
   height: 80px;
   display: flex;
@@ -360,7 +361,7 @@ main {
 
 .liss1 {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   margin-left: -17px;
   border-bottom: solid 1px #ebebff;
   padding-bottom: 20px;
