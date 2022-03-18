@@ -117,7 +117,7 @@ main {
 
 .cards {
   background: url(IMG/header-background-mobile2.png);
-  height: 552px;
+  height: 596px;
   width: 313px;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -127,6 +127,8 @@ main {
   margin-left: 24px;
   padding-left: 16px;
   display: flex;
+  padding-top: 16px;
+  flex-direction: column;
 }
 
 .card1 {
@@ -254,7 +256,7 @@ main {
   text-decoration: none;
   background-color: #ebebff;
   width: 110px;
-  border: solid 1px blue;
+  border: solid 1px #6070ff;
   border-radius: 10px;
   font-family: "Poppins";
   font-size: 17px;
@@ -267,4 +269,53 @@ main {
 .btn1:hover {
   text-decoration: underline;
   text-decoration-color: #6070ff;
+}
+
+.upost {
+  margin-top: 0;
+  padding-top:0;
+}
+.abt{
+  display:grid;
+  gap:0;
+}
+
+.myself {
+  
+  background: url(IMG/header-background-mobile2.png);
+  height: 596px;
+  width: 375px;
+  background-repeat: no-repeat;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  padding-top: 16px;
+  flex-direction: column;
+}
+.abt1 {
+  margin-top:88px;
+  border-top-right-radius: 90px;
+}
+.btn2 {
+  padding: 12px;
+  text-decoration: none;
+  background-color: #ebebff;
+  width: 180px;
+  border: solid 1px #6070ff;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-left:24px;
+}
+
+.hd2 {
+  padding-top: 60px;
 }
