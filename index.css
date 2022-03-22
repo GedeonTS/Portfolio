@@ -256,8 +256,8 @@ main {
 }
 
 .lis:hover {
-  text-decoration: underline;
-  text-decoration-color: #6070ff;
+  background-color: #6c79ee;
+  color: #fff;
 }
 
 .btn1 {
@@ -447,4 +447,19 @@ main {
   line-height: 24px;
   text-align: left;
   color: #7a869a;
+}
+
+.btn1:hover {
+  background-color: #6c79ee;
+  color: #fff;
+}
+
+.btn2:hover {
+  background-color: #6c79ee;
+  color: #fff; 
+}
+
+.btn {
+  background-color: #6c79ee;
+  color: #fff;
 }
