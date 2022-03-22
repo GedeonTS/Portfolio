@@ -391,21 +391,23 @@ main {
   text-decoration-color: #6070ff;
 }
 
-.abt3{
+.abt3 {
   color: #fff;
   text-align: center;
-
 }
 
-.footer{
-  background:#6070FF;
+.footer {
+  background: #6070ff;
   background-image: url(IMG/contact-form-shapes-mobile@2x.png);
   background-size: cover;
   border-top-left-radius: 50px;
-  padding-top: 150px;
   padding-left: 24px;
   padding-right: 24px;
-
-
+  font-family: "poppins", sans-serif;
 }
-
+.contact-header {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 2rem;
+}
