@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-This is a Webpage about our porfolio.
+This is a Webpage about our Porfolio.
 
 ## Built With
 
