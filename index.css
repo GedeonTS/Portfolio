@@ -850,10 +850,10 @@ button:active {
     justify-content: space-between;
     margin-bottom: 70px;
     width: 450px;
-    padding:0;
+    padding: 0;
   }
 
-  .items li a {
+  .items a {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
