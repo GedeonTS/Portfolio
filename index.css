@@ -125,7 +125,7 @@ main {
   flex-direction: column;
 }
 
-.cursor{
+.cursor {
   display: none;
 }
 
@@ -337,7 +337,7 @@ main {
   margin-bottom: 10px;
 }
 
-.li33{
+.li33 {
   display: none;
 }
 
@@ -453,6 +453,7 @@ main {
   background: #fff;
   border: 1px solid #7f8cff;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -465,14 +466,6 @@ button:active {
   color: #fff;
 }
 
-.disable {
-  border: 1px solid #5e6c84;
-  background-color: #fff;
-  color: #5e6c84;
-  pointer-events: none;
-  cursor: not-allowed;
-}
-
 .See-project {
   background: white;
   border: 1px solid blue;
@@ -482,6 +475,7 @@ button:active {
   color: #6070ff;
   border-radius: 10px;
   width: 110px;
+  cursor: pointer;
 }
 
 .resume {
@@ -557,7 +551,7 @@ button:active {
   }
 
   .section1 {
-    height: 916px;
+    height: 846px;
     width: 1440px;
     background: url(IMG/Header-bg.svg);
     background-repeat: no-repeat;
@@ -643,7 +637,6 @@ button:active {
     margin-right: 46px;
     margin-left: 46px;
     width: 500px;
-   
   }
 
   .snapshot1 {
@@ -682,7 +675,7 @@ button:active {
     display: inline-flex;
   }
 
-  .tonic12{
+  .tonic12 {
     margin-bottom: 17px;
   }
 
@@ -739,6 +732,7 @@ button:active {
   }
 
   .btnx {
+    display: flex;
     width: 125px;
   }
 
@@ -756,26 +750,141 @@ button:active {
     color: #fff;
   }
 
-  .li32{
+  .li32 {
     display: none;
   }
 
-  .li33{
+  .li33 {
     display: inline-flex;
     margin-top: 8px;
   }
-  
+
   .border {
     border: solid 1px #2230d2;
     border-radius: 23px;
     width: 1132px;
     height: 473px;
     display: flex;
-    margin-left:-24px;
+    margin-left: -24px;
     padding-left: 24px;
-    margin-top:-24px;
+    margin-top: -24px;
     padding-top: 24px;
   }
 
+  .abt {
+    display: flex;
+    gap: 0;
+    background: url(IMG/about-myself-background-shape-desktop.png);
+  }
 
+  .myself {
+    background: none;
+    height: 700px;
+    width: 1440px;
+    background-repeat: no-repeat;
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    padding-top: 16px;
+    flex-direction: column;
+  }
+
+  .abt1 {
+    margin-top: 0;
+    border-top-right-radius: 90px;
+  }
+
+  .abt2 {
+    background: none;
+    margin-left: -200px;
+    margin-top: 80px;
+  }
+
+  .abt3 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .hd2 {
+    display: flex;
+    margin-left: 115px;
+  }
+
+  .parx {
+    margin-left: 142px;
+    width: 447px;
+    height: 102px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .par22 {
+    margin-left: 142px;
+  }
+
+  .social22 {
+    margin-left: -112px;
+    padding-bottom: 12px;
+  }
+
+  .resume {
+    margin-left: 142px;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    width: 450px;
+  }
+
+  .items li a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    width: 50px;
+    background-color: #f7f7f9;
+    padding-right: 79px;
+  }
+
+  .a {
+    padding-right: 450px;
+    border: none;
+  }
+
+  .b {
+    padding-right: 437px;
+  }
+
+  .c {
+    padding-right: 505px;
+  }
+
+  .footer {
+    background: #6070ff;
+    background-image: url(IMG/contact-shapes.png);
+    background-size: cover;
+    border-top-left-radius: 70px;
+    padding-left: 436px;
+    padding-right: 436px;
+    font-family: "poppins", sans-serif;
+    padding-top: 142px;
+    margin-top: -60px;
+    height: 846px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn10 {
+    margin-left: 200px;
+    margin-bottom: 127px;
+  }
 }
