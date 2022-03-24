@@ -66,6 +66,10 @@ main {
   margin-bottom: 0;
 }
 
+.heading12 {
+  display: none;
+}
+
 .par1 {
   display: flex;
   font-family: "Poppins", sans-serif;
@@ -119,6 +123,10 @@ main {
   display: flex;
   padding-top: 16px;
   flex-direction: column;
+}
+
+.cursor{
+  display: none;
 }
 
 .card1 {
@@ -224,6 +232,10 @@ main {
   text-decoration-color: #6070ff;
 }
 
+.btnx {
+  display: none;
+}
+
 .par3 {
   font-family: "Poppins", sans-serif;
   flex-direction: column;
@@ -323,6 +335,10 @@ main {
   text-align: left;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.li33{
+  display: none;
 }
 
 .liss {
@@ -563,6 +579,7 @@ button:active {
     font-size: 48px;
     line-height: 60px;
     margin-left: 240px;
+    margin-top: 175px;
   }
 
   .par1 {
@@ -626,6 +643,7 @@ button:active {
     margin-right: 46px;
     margin-left: 46px;
     width: 500px;
+   
   }
 
   .snapshot1 {
@@ -725,6 +743,39 @@ button:active {
   }
 
   .ucl12 {
-    padding-right: 150px;
+    padding-right: 180px;
   }
+
+  .cursor {
+    display: flex;
+    margin-left: 320px;
+  }
+
+  .seeBtn {
+    background: #2230d2;
+    color: #fff;
+  }
+
+  .li32{
+    display: none;
+  }
+
+  .li33{
+    display: inline-flex;
+    margin-top: 8px;
+  }
+  
+  .border {
+    border: solid 1px #2230d2;
+    border-radius: 23px;
+    width: 1132px;
+    height: 473px;
+    display: flex;
+    margin-left:-24px;
+    padding-left: 24px;
+    margin-top:-24px;
+    padding-top: 24px;
+  }
+
+
 }
