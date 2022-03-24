@@ -792,6 +792,10 @@ button:active {
     flex-direction: column;
   }
 
+  .card4 {
+    margin-bottom: 120px;
+  }
+
   .abt1 {
     margin-top: 0;
     border-top-right-radius: 90px;
@@ -886,5 +890,17 @@ button:active {
   .btn10 {
     margin-left: 200px;
     margin-bottom: 127px;
+  }
+
+  .user-input {
+    border-radius: 0;
+    margin-bottom: 27px;
+    width: 447px;
+    height: 48px;
+  }
+
+  .message {
+    border-radius: 0;
+    width: 447px;
   }
 }
