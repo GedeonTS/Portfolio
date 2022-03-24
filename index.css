@@ -139,6 +139,7 @@ main {
   height: 220px;
   justify-items: center;
 }
+
 .snapshot2 {
   display: none;
 }
@@ -335,6 +336,7 @@ main {
   text-align: left;
   justify-content: space-between;
   margin-bottom: 10px;
+  margin-left: 33px;
 }
 
 .li33 {
@@ -699,6 +701,7 @@ button:active {
   .li2 {
     display: none;
   }
+
   .li12 {
     display: flex;
     font-family: "poppins", sans-serif;
@@ -798,6 +801,7 @@ button:active {
 
   .abt1 {
     margin-top: 0;
+    padding-top: 100px;
     border-top-right-radius: 90px;
   }
 
@@ -805,6 +809,7 @@ button:active {
     background: none;
     margin-left: -200px;
     margin-top: 80px;
+    padding-top: 110px;
   }
 
   .abt3 {
@@ -841,9 +846,11 @@ button:active {
 
   .items {
     display: flex;
+    list-style: none;
     justify-content: space-between;
     margin-bottom: 70px;
     width: 450px;
+    padding:0;
   }
 
   .items li a {
@@ -856,7 +863,7 @@ button:active {
   }
 
   .a {
-    padding-right: 450px;
+    padding-right: 430px;
     border: none;
   }
 
