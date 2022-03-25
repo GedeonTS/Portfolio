@@ -478,6 +478,7 @@ button:active {
   border-radius: 10px;
   width: 110px;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 
 .resume {
@@ -611,6 +612,11 @@ button:active {
     padding-left: 260px;
     justify-content: space-between;
     padding-top: 10px;
+  }
+
+  .social li:hover {
+    transform: scale(1.5);
+    background-color: bisque;
   }
 
   .works {
