@@ -478,6 +478,7 @@ button:active {
   border-radius: 10px;
   width: 110px;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 
 .resume {
