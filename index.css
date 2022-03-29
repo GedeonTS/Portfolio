@@ -424,12 +424,12 @@ main {
   color: #6070ff;
 }
 
-.get:hover {
-  background-color: rgb(0, 0, 0);
+.get {
+  color: #000;
 }
 
-.get {
-  color:#000;
+.get:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 .get:focus {
