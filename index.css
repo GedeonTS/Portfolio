@@ -424,6 +424,18 @@ main {
   color: #6070ff;
 }
 
+.get {
+  color: #000;
+}
+
+.get:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.get:focus {
+  color: #000;
+}
+
 .user-input {
   width: 327px;
   height: 40px;
