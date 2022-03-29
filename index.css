@@ -425,7 +425,7 @@ main {
 }
 
 .get:hover {
-  background-color: #344563;
+  background-color: rgb(0, 0, 0);
 }
 
 .user-input {
