@@ -428,6 +428,10 @@ main {
   background-color: rgb(0, 0, 0);
 }
 
+.get {
+  color:#000;
+}
+
 .get:focus {
   color: #000;
 }
