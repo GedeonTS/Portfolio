@@ -8,8 +8,7 @@ open.addEventListener("click", () => {
   close.classList.remove("hide");
   close.classList.add("show");
   canceli.classList.remove("hide");
-    canceli.classList.add("show");
-    close.focus();
+  canceli.classList.add("show");
 });
 canceli.addEventListener("click", () => {
   close.classList.add("hide");
