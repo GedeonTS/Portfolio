@@ -34,10 +34,10 @@ main {
   text-decoration: none;
 }
 
-.js-list li a {
+.menu-list {
   text-decoration: none;
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
