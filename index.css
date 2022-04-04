@@ -21,7 +21,7 @@ main {
 }
 
 #canceli {
-  margin-left: 337px;
+  margin-left: 315px;
 }
 
 .hide {
@@ -29,9 +29,25 @@ main {
   pointer-events: none;
 }
 
+.js-list {
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.js-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 60px;
+}
+
 .show {
-  opacity: 1;
-  pointer-events: all;
+  opacity: 0.88;
+  pointer-events: auto;
 }
 
 .header1 {
