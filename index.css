@@ -12,16 +12,16 @@ main {
   background: url(IMG/header-background-mobile.png);
   border-bottom-left-radius: 100px;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .js-menu {
-  position: absolute;
+  position: fixed;
   background-color: #6070ff;
   opacity: 0.6;
   height: 700px;
   width: 375px;
   padding-top: 20px;
+  margin-top: -50px;
   transition: opacity 500ms ease;
 }
 
@@ -97,6 +97,11 @@ main {
   color: #172b4d;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+
+.blur {
+  filter:blur(10px);
+  pointer-events:none;
 }
 
 .heading1 {
