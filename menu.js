@@ -28,7 +28,7 @@ link1.addEventListener('click', () => {
   canceli.classList.add('hide');
   canceli.classList.remove('show');
   open.classList.remove('hide');
-  open.classList.add("show");
+  open.classList.add('show');
 });
 
 link2.addEventListener('click', () => {
