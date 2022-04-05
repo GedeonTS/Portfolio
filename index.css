@@ -18,6 +18,7 @@ main {
   height: 700px;
   width: 375px;
   padding-top: 20px;
+  transition: opacity 500ms ease;
 }
 
 #canceli {
