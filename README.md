@@ -1,10 +1,18 @@
 # PORTFOLIO
 
-This is a Webpage about our Porfolio.
+> This is a Webpage about our Porfolio.
 
 ## Built With
 
 - HTML and CSS
+
+## Live Demo
+
+Click [here](https://gedeonts.github.io/PORTFOLIO/)
+
+## Getting Started
+
+You can have a copy of this repo run on your local machine by just directly cloning it.
 
 ### Prerequisites
 
@@ -35,3 +43,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone who helped us.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
