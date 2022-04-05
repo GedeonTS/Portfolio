@@ -78,10 +78,13 @@ main {
 }
 
 .menu {
-  margin-top: 16px;
-  margin-right: 36px;
+  margin-left: 320px;
   align-content: center;
   font-size: 25px;
+}
+
+.nav-fixing {
+  position: fixed;
 }
 
 .menu1 {
@@ -594,12 +597,16 @@ button:active {
   }
 
   .menu1 {
-    display: flex;
+    display: inline;
     text-decoration: none;
     font-family: "poppins", sans-serif;
-    margin-right: 25px;
+    margin-left: 50px;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .squeeze-list {
+    margin-left: 1100px;
   }
 
   .menu1:hover {
@@ -612,6 +619,7 @@ button:active {
     margin-top: 24px;
     font-weight: 500;
     color: #344563;
+    position: fixed;
   }
 
   .section1 {
