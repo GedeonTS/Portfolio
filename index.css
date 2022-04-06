@@ -103,8 +103,8 @@ main {
 }
 
 .blur {
-  filter:blur(10px);
-  pointer-events:none;
+  filter: blur(10px);
+  pointer-events: none;
 }
 
 .heading1 {
@@ -175,6 +175,55 @@ main {
   display: flex;
   padding-top: 16px;
   flex-direction: column;
+}
+
+.popup-window {
+  background: url(IMG/header-background-mobile2.png);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  margin-left: 24px;
+  padding-left: 16px;
+  display: block;
+  position: fixed;
+  padding-top: 16px;
+  flex-direction: column;
+}
+
+.ulx {
+  width: 90px;;
+}
+
+.popup-image-desktop {
+  display:none;
+}
+
+.popup-head{
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#close-popup{
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+
+.popup-image-mobile {
+  margin-top: 20px;
+}
+
+.pupop-hide {
+  display: none;
+}
+
+.popup-show {
+  display: block;
 }
 
 .cursor {
@@ -709,11 +758,60 @@ button:active {
     flex-direction: row;
   }
 
+  .popup-window {
+    background: #fff;
+    position: fixed;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-left: 100px;
+    padding: 38px 38px 38px 38px;
+    display: block;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  .popup-head {
+    width: 1156px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ulx {
+    width: 300px;
+  }
+
+  #close-popup {
+    width: 19px;
+    height: 19px;
+  }
+
+  .popup-image-desktop {
+    display:block;
+  }
+  
+  .popup-image-mobile {
+    display:none;
+  }
+  
+  .popup-show {
+    display: block;
+  }
+
+  .pupop-hide {
+    display: none;
+  }
+
   .cardd {
     flex-direction: column;
     margin-right: 46px;
     margin-left: 46px;
     width: 500px;
+    margin-top: 10px;
   }
 
   .snapshot1 {
@@ -723,7 +821,7 @@ button:active {
   .snapshot2 {
     display: flex;
     height: 448px;
-    width: 544px;
+    width: 520px;
   }
 
   .ulc1 {

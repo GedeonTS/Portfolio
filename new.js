@@ -1,74 +1,4 @@
-const open = document.getElementById('open');
-const close = document.getElementById('close');
-const canceli = document.getElementById('canceli');
-const link1 = document.getElementById('elem1');
-const link2 = document.getElementById('elem2');
-const link3 = document.getElementById('elem3');
-const section1 = document.getElementById('section1');
-
-open.addEventListener('click', () => {
-  open.classList.add('hide');
-  open.classList.remove('show');
-  close.classList.remove('hide');
-  close.classList.add('show');
-  canceli.classList.remove('hide');
-  canceli.classList.add('show');
-  section1.classList.add('blur')
-});
-canceli.addEventListener('click', () => {
-  close.classList.add('hide');
-  close.classList.remove('show');
-  canceli.classList.add('hide');
-  canceli.classList.remove('show');
-  open.classList.remove('hide');
-  open.classList.add('show');
-  section1.classList.remove('blur')
-});
-
-link1.addEventListener('click', () => {
-  close.classList.add('hide');
-  close.classList.remove('show');
-  canceli.classList.add('hide');
-  canceli.classList.remove('show');
-  open.classList.remove('hide');
-  open.classList.add('show');
-  section1.classList.remove('blur')
-});
-
-link2.addEventListener('click', () => {
-  close.classList.add('hide');
-  close.classList.remove('show');
-  canceli.classList.add('hide');
-  canceli.classList.remove('show');
-  open.classList.remove('hide');
-  open.classList.add('show');
-  section1.classList.remove('blur')
-});
-
-link3.addEventListener('click', () => {
-  close.classList.add('hide');
-  close.classList.remove('show');
-  canceli.classList.add('hide');
-  canceli.classList.remove('show');
-  open.classList.remove('hide');
-  open.classList.add('show');
-  section1.classList.remove('blur')
-});
-
-
-//middle section
-
-//1st step create elements
-function standardCard(title, content, imageDesktop, imageMobile, order1, order2) {
-  const inputs = {
-    title: title,
-    content: content,
-    imageDesktop: imageDesktop,
-    imageMobile: imageMobile,
-    order1: order1,
-    order2: order2,
-  }
-  const mainContainer = document.getElementById('middle-section');  //main-section
+const mainContainer = document.getElementById('middle-section');  //main-section
 const container1 = document.createElement('section');  //1st middle-section
 
 const project1ImageMobile = document.createElement('img');   //section image
@@ -118,21 +48,21 @@ const SeeProjectButton = document.createElement('button');//trigger popup here
 container1.classList.add('cards', 'card1');
 
 project1ImageMobile.classList.add('snapshot1');
-project1ImageMobile.src = `${inputs.imageMobile}`; //mobile image source
+project1ImageMobile.src = './IMG/Snapshoot-Portfolio-1.svg'; //mobile image source
 project1ImageMobile.alt = 'portfolio snapshot'; //mobile image alt text
 
 project1ImageDesktop.classList.add('snapshot2');
-project1ImageDesktop.src = `${inputs.imageDesktop}`; //destop image source
+project1ImageDesktop.src = './IMG/Snap1.png'; //destop image source
 project1ImageDesktop.alt = 'portfolio snapshot'; //desktop image alt text
 
 divContainer1.classList.add('cardd');
 
 h2Mobile.classList.add('tonic');
 h2Mobile.setAttribute('id', 'portfolio')
-h2Mobile.innerText = inputs.title;
+h2Mobile.innerText = 'Tonic';
 
 h2Desktop.classList.add('tonic', 'tonic1');
-h2Desktop.innerText =inputs.title;
+h2Desktop.innerText = 'Tonic';
 
 ulCanopy.classList.add('ulc1','ucl12');
 
@@ -164,7 +94,7 @@ parMobile.classList.add('par3');
 parDesktop.classList.add('par3','par3b');
 
 parMobile.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
-parDesktop.innerText = inputs.content;
+parDesktop.innerText = '--------------------------------------------------------------';
 
 ulButtons.classList.add('ulc2');
 
@@ -197,9 +127,6 @@ liButton1.append(Button1Container1);
 liButton2.append(Button2Container1);
 liButton3.append(Button3Container1);
 
-  project1ImageDesktop.style.order = inputs.order1;
-  divContainer1.style.order = inputs.order2;
-}
 
 
 //second container
