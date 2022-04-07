@@ -23,6 +23,7 @@ main {
   padding-top: 20px;
   margin-top: -50px;
   transition: opacity 500ms ease;
+  z-index: 1;
 }
 
 #canceli {
@@ -103,8 +104,10 @@ main {
 }
 
 .blur {
-  filter:blur(10px);
-  pointer-events:none;
+  filter: blur(10px);
+  pointer-events: none;
+  background-color: #2230d2;
+  -webkit-filter: blur(8px);
 }
 
 .heading1 {
@@ -175,6 +178,95 @@ main {
   display: flex;
   padding-top: 16px;
   flex-direction: column;
+}
+
+.popup-window {
+  background: #fff;
+  height: 713px;
+  width: auto;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  left: 10px;
+  right: 32px;
+  top: 5px;
+  display: block;
+  position: fixed;
+  padding-top: 16px;
+  flex-direction: column;
+  font-size: 14px;
+  z-index: 1;
+  bottom: 337px;
+}
+
+.popup-text {
+  margin: 15px 15px;
+}
+
+.backblur {
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.ulc2x {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.seeAlt {
+  width: 150px;
+  display: inline;
+  font-size: 12px !important;
+}
+
+.see-button-image {
+  width: 10px;
+  height: 10px;
+}
+
+.see-div {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.ulx {
+  width: 220px;
+  margin-left: 15px;
+}
+
+.popup-image-desktop {
+  display: none;
+}
+
+.popup-head {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+#close-popup {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+
+.popup-image-mobile {
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.popup-hide {
+  display: none !important;
 }
 
 .cursor {
@@ -574,7 +666,8 @@ button:active {
     align-items: center;
     color: #6070ff;
     background-color: #fff;
-    height: 70px;
+
+    /* height: 70px; */
     width: 1440px;
     justify-content: space-between;
   }
@@ -615,8 +708,9 @@ button:active {
 
   .navbar {
     display: flex;
+    height: 70px;
     margin-right: 155px;
-    margin-top: 24px;
+    margin-top: 50px;
     font-weight: 500;
     color: #344563;
     position: fixed;
@@ -709,11 +803,69 @@ button:active {
     flex-direction: row;
   }
 
+  .popup-window {
+    background: #fff;
+    position: fixed;
+    height: 850px;
+    width: auto;
+    max-width: 1200px;
+    bottom: 30px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-left: 100px;
+    padding: 38px 38px 38px 38px;
+    display: block;
+    flex-direction: row;
+    margin-top: 40px;
+    z-index: 0;
+  }
+
+  .backblur {
+    background: #c1c7d0;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  .popup-head {
+    width: 1156px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ulx {
+    width: 300px;
+  }
+
+  #close-popup {
+    width: 19px;
+    height: 19px;
+  }
+
+  .popup-image-desktop {
+    display: block;
+    width: 1156px;
+    height: 586px;
+    margin-top: 10px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .popup-image-mobile {
+    display: none;
+  }
+
   .cardd {
     flex-direction: column;
     margin-right: 46px;
     margin-left: 46px;
     width: 500px;
+    margin-top: 10px;
   }
 
   .snapshot1 {
@@ -723,7 +875,7 @@ button:active {
   .snapshot2 {
     display: flex;
     height: 448px;
-    width: 544px;
+    width: 520px;
   }
 
   .ulc1 {
