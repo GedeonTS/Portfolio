@@ -182,7 +182,7 @@ main {
 
 .popup-window {
   background: #fff;
-  height: auto;
+  height: 713px;
   width: auto;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -806,7 +806,7 @@ button:active {
   .popup-window {
     background: #fff;
     position: fixed;
-    height: auto;
+    height: 1156px;
     width: auto;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -818,6 +818,7 @@ button:active {
     display: block;
     flex-direction: row;
     margin-top: 40px;
+    z-index: 0;
   }
 
   .backblur {
