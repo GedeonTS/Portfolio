@@ -5,6 +5,7 @@ const link1 = document.getElementById('elem1');
 const link2 = document.getElementById('elem2');
 const link3 = document.getElementById('elem3');
 const section1 = document.getElementById('section1');
+const headernav = document.getElementById('headernav')
 
 open.addEventListener('click', () => {
   open.classList.add('hide');
@@ -55,10 +56,10 @@ link3.addEventListener('click', () => {
   section1.classList.remove('blur')
 });
 
-
 //middle section
 
 //1st step create elements
+const body = document.querySelectorctor('body');
 function standardCard(title, content, imageDesktop, imageMobile, order1, order2) {
   const inputs = {
     title: title,
@@ -110,7 +111,9 @@ const Button1Container1 = document.createElement('button');
 const Button2Container1 = document.createElement('button');
 const Button3Container1 = document.createElement('button');
 
-const SeeProjectButton = document.createElement('button');//trigger popup here
+  const SeeProjectButton = document.createElement('button');//trigger popup here
+  SeeProjectButton.setAttribute('id', 'Sbtn');
+ 
 
 
 //2nd step assign selectors to elements
@@ -128,7 +131,7 @@ project1ImageDesktop.alt = 'portfolio snapshot'; //desktop image alt text
 divContainer1.classList.add('cardd');
 
 h2Mobile.classList.add('tonic');
-h2Mobile.setAttribute('id', 'portfolio')
+  h2Mobile.setAttribute('id', 'portfolio');
 h2Mobile.innerText = inputs.title;
 
 h2Desktop.classList.add('tonic', 'tonic1');
@@ -177,7 +180,7 @@ Button2Container1.innerText = 'CSS';
 Button3Container1.innerText = 'JAVASCIPT';
 
 SeeProjectButton.classList.add('See-project');
-SeeProjectButton.innerText = 'See-project';
+  SeeProjectButton.innerText = 'See-project';
 
 //step 3 insert element
 mainContainer.append(container1);
@@ -197,14 +200,131 @@ liButton1.append(Button1Container1);
 liButton2.append(Button2Container1);
 liButton3.append(Button3Container1);
 
+  
   project1ImageDesktop.style.order = inputs.order1;
   divContainer1.style.order = inputs.order2;
+
+ //popup creation 
+  
+  //variables declaration
+  const popupSection = document.createElement('section');
+  const popupHead = document.createElement('div');
+  const tonicTitleMob= document.createElement('h2');
+  const tonicTitleDes = document.createElement('h2');
+  const popCloser = document.createElement('img');
+  const wrapper1 = document.createElement('ul');
+  const poplist1 = document.createElement('li');
+  const poplist2 = document.createElement('li');
+  const poplist3 = document.createElement('li');
+  const poplist4 = document.createElement('li');
+  const poplist5 = document.createElement('li');
+  const poplist6 = document.createElement('li');
+  const poplist7 = document.createElement('li');
+  
+  const linka1 = document.createElement('a');
+  const linka2 = document.createElement('a');
+  const linka3 = document.createElement('a');
+  const linka4 = document.createElement('a');
+  const linka5 = document.createElement('a');
+
+  const separator1 = document.createElement('img');
+  const separator2 = document.createElement('img');
+
+  const popupimagVar1 = document.createElement('img');
+  const popupimgadVar2 = document.createElement('img');
+
+  const WrapperDiv = document.createElement('div');
+
+  const footingpar = document.createElement('p');
+
+  const wrapper2 = document.createElement('ul');
+  const popli1 = document.createElement('li');
+  const popli2 = document.createElement('li');
+  const popli2 = document.createElement('li');
+  const btna1 = document.createElement('button');
+  const btna2 = document.createElement('button');
+  const btna3 = document.createElement('button');
+
+  const seeDiv = document.createElement('div');
+  const btnb1 = document.createElement('button');
+  const btnb2 = document.createElement('button');
+
+  //selector assignment
+
+  popupSection.classList.add('popup-window', 'popup-hide');
+  popupSection.setAttribute('id', 'popupwindow');
+  popupHead.classList.add('popup-head');
+
+  tonicTitleMob.classList.add('tonic');
+  tonicTitleDes.classList.add('tonic', 'tonic1');
+  
+  tonicTitleDes.innerText = 'Tonic';
+  tonicTitleMob.innerText = 'Tonic';
+
+  popCloser.setAttribute('id', 'close-popup');
+  wrapper1.classList.add('ulc1', 'ulx');
+  
+  poplist1.classList.add('li1');
+  poplist2.classList.add('li1','li12');
+  poplist3.classList.add('counter'); 
+  poplist4.classList.add('li2');
+  poplist5.classList.add('li2', 'li22');
+  poplist6.classList.add('counter');
+  poplist7.classList.add('li3');
+
+  linka1.href = '#';
+  linka2.href = '#';
+  linka3.href = '#';
+  linka4.href = '#';
+  linka5.href = '#';
+
+  linka1.innerText='CANOPY';
+    linka2.innerText='CANOPY';
+linka3.innerText='Back End Dev';
+linka4.innerText='Back End Dev';
+linka5.
+
+  
+  separator1.alt='image';
+  separator2.alt='image';
+
+  separator1.src='./IMG/Counter.svg';
+  separator2.src = './IMG/Counter.svg';
+  
+
+
+
+
+
+
+
+
+
+
+
+//popup-window manipulation
+const popupWindow = document.getElementById('popupWindoW');
+  const BtnclosePopup = document.getElementById('close-popup');
+  
+SeeProjectButton.addEventListener('click', () => {
+  popupWindow.classList.remove('popup-hide');
+  section1.classList.add('blur');
+  mainContainer.classList.add('blur');
+  mainContainer.classList.add('backblur');
+  headernav.classList.add('hide');
+});
+  
+  BtnclosePopup.addEventListener('click', () => {
+    popupWindow.classList.add('popup-hide');
+    section1.classList.remove('blur');
+    mainContainer.classList.remove('blur');
+    mainContainer.classList.remove('backblur');
+    headernav.classList.remove('hide');
+
+  });
 }
 
 
-//second container
-const container2 = document.createElement('section'); 
-container2.classList.add('cards', 'card1');
 
 
 
@@ -212,16 +332,3 @@ container2.classList.add('cards', 'card1');
 
 
 
-
-
-
-
-//function declaration
-// function displayPopup(title, description, projectImage) {
-//   const projectDisplay = {
-//     title: title,
-//     description: description,
-//     Imge: projectImage,
-//     popUpText: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-//   };
-// }
