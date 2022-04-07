@@ -375,4 +375,13 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   });
 }
 
-standardCard();
+standardCard('Tonic', 'A daily selection of privately personalized reads; no accounts or sign-ups required.', './IMG/Snap1.png', './IMG/Snapshoot-Portfolio-1.svg', '1', '2');
+standardCard('Multi-Post Stories', 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.', './IMG/Snap2.png', './IMG/Snapshoot-Portfolio2.svg', '2', '1');
+standardCard('Facebook _360', 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', './IMG/Snap3.png', './IMG/Snapshoot-Portfolio-1.svg', '1', '2');
+standardCard('ber Navigation', 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.', './IMG/Snap4.png', './IMG/Snapshoot-Portfolio2.svg', '2', '1');
+// title,
+// content,
+// imageDesktop,
+// imageMobile,
+// order1,
+// order2,
