@@ -297,7 +297,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   separator2.src = './IMG/Counter.svg';
 
   separator1.classList.add('counter');
-separator2.classList.add('counter');
+  separator2.classList.add('counter');
 
   popupimagVar1.alt = 'image';
   popupimgaVar2.alt = 'image';
@@ -337,7 +337,7 @@ separator2.classList.add('counter');
   body.append(popupSection);
   popupSection.append(popupHead, wrapper1, popupimagVar1, popupimgaVar2, WrapperDiv);
   popupHead.append(tonicTitleMob, tonicTitleDes, popCloser);
-  wrapper1.append(poplist1, poplist2,poplist6, poplist3, poplist4, poplist7,poplist5,);
+  wrapper1.append(poplist1, poplist2, poplist6, poplist3, poplist4, poplist7, poplist5,);
   poplist1.append(linka1);
   poplist2.append(linka2);
   poplist6.append(separator1);
@@ -348,7 +348,7 @@ separator2.classList.add('counter');
 
   WrapperDiv.append(footingpar, buttonswrap);
   buttonswrap.append(wrapper2, seeDiv);
- 
+
   wrapper2.append(popli1, popli2, popli3);
   popli1.append(btna1);
   popli2.append(btna2);
