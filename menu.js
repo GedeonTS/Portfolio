@@ -5,7 +5,7 @@ const link1 = document.getElementById('elem1');
 const link2 = document.getElementById('elem2');
 const link3 = document.getElementById('elem3');
 const section1 = document.getElementById('section1');
-const headernav = document.getElementById('headernav')
+const headernav = document.getElementById('headernav');
 
 open.addEventListener('click', () => {
   open.classList.add('hide');
@@ -14,7 +14,7 @@ open.addEventListener('click', () => {
   close.classList.add('show');
   canceli.classList.remove('hide');
   canceli.classList.add('show');
-  section1.classList.add('blur')
+  section1.classList.add('blur');
 });
 canceli.addEventListener('click', () => {
   close.classList.add('hide');
@@ -23,7 +23,7 @@ canceli.addEventListener('click', () => {
   canceli.classList.remove('show');
   open.classList.remove('hide');
   open.classList.add('show');
-  section1.classList.remove('blur')
+  section1.classList.remove('blur');
 });
 
 link1.addEventListener('click', () => {
@@ -33,7 +33,7 @@ link1.addEventListener('click', () => {
   canceli.classList.remove('show');
   open.classList.remove('hide');
   open.classList.add('show');
-  section1.classList.remove('blur')
+  section1.classList.remove('blur');
 });
 
 link2.addEventListener('click', () => {
@@ -43,7 +43,7 @@ link2.addEventListener('click', () => {
   canceli.classList.remove('show');
   open.classList.remove('hide');
   open.classList.add('show');
-  section1.classList.remove('blur')
+  section1.classList.remove('blur');
 });
 
 link3.addEventListener('click', () => {
@@ -53,46 +53,47 @@ link3.addEventListener('click', () => {
   canceli.classList.remove('show');
   open.classList.remove('hide');
   open.classList.add('show');
-  section1.classList.remove('blur')
+  section1.classList.remove('blur');
 });
 
-//middle section
+//  middle section
 
-//1st step create elements
+//  1st step create elements
 const body = document.querySelector('body');
 function standardCard(title, content, imageDesktop, imageMobile, order1, order2) {
   const inputs = {
-    title: title,
-    content: content,
-    imageDesktop: imageDesktop,
-    imageMobile: imageMobile,
-    order1: order1,
-    order2: order2,
-  }
-  const mainContainer = document.getElementById('middle-section');  //main-section
-  const container1 = document.createElement('section');  //1st middle-section
+    title,
+    content,
+    imageDesktop,
+    imageMobile,
+    order1,
+    order2,
+  };
 
-  const project1ImageMobile = document.createElement('img');   //section image
-  const project1ImageDesktop = document.createElement('img');   //section image
+  const mainContainer = document.getElementById('middle-section'); // main-section
+  const container1 = document.createElement('section'); // 1st middle-section
+
+  const project1ImageMobile = document.createElement('img'); // section image
+  const project1ImageDesktop = document.createElement('img'); // section image
 
   const divContainer1 = document.createElement('div'); // content wrapper
-  const h2Mobile = document.createElement('h2'); //mobile version header
-  const h2Desktop = document.createElement('h2');//desktop version header
+  const h2Mobile = document.createElement('h2'); // mobile version header
+  const h2Desktop = document.createElement('h2');// desktop version header
 
   const ulCanopy = document.createElement('ul'); // 1st list wrapper
-  const liTitleMob = document.createElement('li'); //1st list element 1
-  const liTitleDesk = document.createElement('li'); //1st list element 2
-  const liCounter1 = document.createElement('li'); //1st list element 3
-  const liDevMob = document.createElement('li'); //1st list element 4
-  const liDevDesk = document.createElement('li'); //1st list element 5
-  const liCounter2 = document.createElement('li'); //1st list element 6
-  const liYear1 = document.createElement('li'); //1st list element 7
+  const liTitleMob = document.createElement('li'); // 1st list element 1
+  const liTitleDesk = document.createElement('li'); // 1st list element 2
+  const liCounter1 = document.createElement('li'); // 1st list element 3
+  const liDevMob = document.createElement('li'); // 1st list element 4
+  const liDevDesk = document.createElement('li'); // 1st list element 5
+  const liCounter2 = document.createElement('li'); // 1st list element 6
+  const liYear1 = document.createElement('li'); // 1st list element 7
 
-  //Counter images
+  // Counter images
   const imgCounter1 = document.createElement('img');
   const imgCounter2 = document.createElement('img');
 
-  //list links
+  // list links
   const alink1 = document.createElement('a');
   const alink2 = document.createElement('a');
   const alink3 = document.createElement('a');
@@ -102,7 +103,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   const parDesktop = document.createElement('p');
   const parMobile = document.createElement('p');
 
-  const ulButtons = document.createElement('ul'); //buttons list wrapper
+  const ulButtons = document.createElement('ul'); // buttons list wrapper
   const liButton1 = document.createElement('li');
   const liButton2 = document.createElement('li');
   const liButton3 = document.createElement('li');
@@ -111,22 +112,20 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   const Button2Container1 = document.createElement('button');
   const Button3Container1 = document.createElement('button');
 
-  const SeeProjectButton = document.createElement('button');//trigger popup here
+  const SeeProjectButton = document.createElement('button');// trigger popup here
   SeeProjectButton.setAttribute('id', 'Sbtn');
 
-
-
-  //2nd step assign selectors to elements
+  // 2nd step assign selectors to elements
 
   container1.classList.add('cards', 'card1');
 
   project1ImageMobile.classList.add('snapshot1');
-  project1ImageMobile.src = `${inputs.imageMobile}`; //mobile image source
-  project1ImageMobile.alt = 'portfolio snapshot'; //mobile image alt text
+  project1ImageMobile.src = `${inputs.imageMobile}`; // mobile image source
+  project1ImageMobile.alt = 'portfolio snapshot'; // mobile image alt text
 
   project1ImageDesktop.classList.add('snapshot2');
-  project1ImageDesktop.src = `${inputs.imageDesktop}`; //destop image source
-  project1ImageDesktop.alt = 'portfolio snapshot'; //desktop image alt text
+  project1ImageDesktop.src = `${inputs.imageDesktop}`; // destop image source
+  project1ImageDesktop.alt = 'portfolio snapshot'; // desktop image alt text
 
   divContainer1.classList.add('cardd');
 
@@ -159,7 +158,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   alink4.href = '#';
   alink5.href = '#';
 
-  //image counter paths assignement
+  // image counter paths assignement
   imgCounter1.src = 'IMG/Counter.svg';
   imgCounter2.src = 'IMG/Counter.svg';
 
@@ -182,15 +181,16 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   SeeProjectButton.classList.add('See-project');
   SeeProjectButton.innerText = 'See-project';
 
-  //step 3 insert element
+  // step 3 insert element
   mainContainer.append(container1);
   container1.append(project1ImageMobile, project1ImageDesktop, divContainer1);
-  divContainer1.append(h2Mobile, h2Desktop, ulCanopy, parDesktop, parMobile, ulButtons, SeeProjectButton);
+  divContainer1.append(h2Mobile, h2Desktop, ulCanopy, parDesktop, parMobile, ulButtons);
+  divContainer1.append(SeeProjectButton);
   ulCanopy.append(liTitleDesk, liTitleMob, liCounter1, liDevDesk, liDevMob, liCounter2, liYear1);
   liTitleDesk.append(alink1);
   liTitleMob.append(alink2);
   liDevMob.append(alink3);
-  liDevDesk.append(alink4)
+  liDevDesk.append(alink4);
   liYear1.append(alink5);
   liCounter1.append(imgCounter1);
   liCounter2.append(imgCounter2);
@@ -200,13 +200,12 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   liButton2.append(Button2Container1);
   liButton3.append(Button3Container1);
 
-
   project1ImageDesktop.style.order = inputs.order1;
   divContainer1.style.order = inputs.order2;
 
-  //popup creation 
+  // popup creation
 
-  //variables declaration
+  // variables declaration
   const popupSection = document.createElement('section');
   const popupHead = document.createElement('div');
   const tonicTitleMob = document.createElement('h2');
@@ -254,7 +253,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   const imagelive = document.createElement('img');
   const imageSrc = document.createElement('img');
 
-  //selector and value assignment
+  // selector and value assignment
 
   popupSection.classList.add('popup-window', 'popup-hide');
   popupSection.setAttribute('id', 'popup-window');
@@ -331,13 +330,12 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   imagelive.src = './ICONS/see-live.png';
   imageSrc.src = './ICONS/see-source.png';
 
-
-  //Attaching current variable to DOM tree
+  // Attaching current variable to DOM tree
 
   body.append(popupSection);
   popupSection.append(popupHead, wrapper1, popupimagVar1, popupimgaVar2, WrapperDiv);
   popupHead.append(tonicTitleMob, tonicTitleDes, popCloser);
-  wrapper1.append(poplist1, poplist2, poplist6, poplist3, poplist4, poplist7, poplist5,);
+  wrapper1.append(poplist1, poplist2, poplist6, poplist3, poplist4, poplist7, poplist5);
   poplist1.append(linka1);
   poplist2.append(linka2);
   poplist6.append(separator1);
@@ -356,7 +354,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
 
   seeDiv.append(btnb1, btnb2);
 
-  //popup-window manipulation
+  // popup-window manipulation
   // const popupWindow = document.getElementById('popupWindoW');
   // const BtnclosePopup = document.getElementById('close-popup');
 
@@ -374,15 +372,17 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
     mainContainer.classList.remove('blur');
     mainContainer.classList.remove('backblur');
     headernav.classList.remove('hide');
-
   });
 }
 
+const cardtest = {
+  title: 'canopy',
+  content: 'lorem ipusm',
+  imageDesktop: './IMG/Snapshoot-Portfolio-1.svg',
+  imageMobile: './IMG/mobile-popup-Portfolio.png',
+  order1: '1',
+  order2: '2',
 
+};
 
-
-
-
-
-
-
+cardtest.standardCard();

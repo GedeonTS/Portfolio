@@ -6,7 +6,6 @@ body {
   background-color: #e5e5e5;
   margin: 0;
   background-repeat: no-repeat;
-  max-width: 50%;
 }
 
 main {
@@ -24,6 +23,7 @@ main {
   padding-top: 20px;
   margin-top: -50px;
   transition: opacity 500ms ease;
+  z-index: 1;
 }
 
 #canceli {
@@ -198,8 +198,7 @@ main {
   flex-direction: column;
   font-size: 14px;
   z-index: 1;
-  bottom:337px;
-
+  bottom: 337px;
 }
 
 .popup-text {
@@ -214,7 +213,7 @@ main {
 
 .ulc2x {
   display: flex;
-  width: 220px!;
+  width: 220px;
   justify-content: space-between;
   margin-left: 30px;
   margin-bottom: 20px;
@@ -667,6 +666,7 @@ button:active {
     align-items: center;
     color: #6070ff;
     background-color: #fff;
+
     /* height: 70px; */
     width: 1440px;
     justify-content: space-between;
