@@ -375,14 +375,4 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   });
 }
 
-const cardtest = {
-  title: 'canopy',
-  content: 'lorem ipusm',
-  imageDesktop: './IMG/Snapshoot-Portfolio-1.svg',
-  imageMobile: './IMG/mobile-popup-Portfolio.png',
-  order1: '1',
-  order2: '2',
-
-};
-
-cardtest.standardCard();
+standardCard();
