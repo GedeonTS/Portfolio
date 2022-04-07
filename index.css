@@ -806,8 +806,11 @@ button:active {
   .popup-window {
     background: #fff;
     position: fixed;
-    height: 1156px;
+    height:fit-content;
     width: auto;
+    max-width: 1200px;
+
+    bottom:30px;
     background-repeat: no-repeat;
     border-radius: 10px;
     color: #172b4d;

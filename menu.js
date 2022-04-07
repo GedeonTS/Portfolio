@@ -377,17 +377,26 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
 
 // creation of projects data
 
-  ProjectWrapper = [{ title:'Tonic', content:'A daily selection of privately personalized reads; no accounts or sign-ups required.', imageDesktop:'./IMG/Snap1.png', imageMobile:'./IMG/Snapshoot-Portfolio-1.svg', order1:'1', order2:'2'},
-    { title:'Multi-Post Stories', content:'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.', imageDesktop:'./IMG/Snap2.png', imageMobile:'./IMG/Snapshoot-Portfolio2.svg', order1:'2', order2:'1'},
-    { title:'Facebook _360', content:'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', imageDesktop:'./IMG/Snap3.png', imageMobile:'./IMG/Snapshoot-Portfolio-1.svg', order1:'1', order2:'2'},
-    { title:'ber Navigation', content:'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.', imageDesktop:'./IMG/Snap4.png', imageMobile:'./IMG/Snapshoot-Portfolio2.svg', order1:'2', order2:'1'}];
-  for (let i = 0; i < ProjectWrapper.length; i += 1){
-    let titleValue = ProjectWrapper[i].title;
-    let contentValue = ProjectWrapper[i].content;
-    let imageDesktopValue = ProjectWrapper[i].imageDesktop;
-    let imageMobileValue = ProjectWrapper[i].imageMobile;
-    let order1Value = ProjectWrapper[i].order1;
-    let order2Value = ProjectWrapper[i].order2;
+const ProjectWrapper = [{
+  title: 'Tonic', content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', imageDesktop: './IMG/Snap1.png', imageMobile: './IMG/Snapshoot-Portfolio-1.svg', order1: '1', order2: '2',
+},
+{
+  title: 'Multi-Post Stories', content: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.', imageDesktop: './IMG/Snap2.png', imageMobile: './IMG/Snapshoot-Portfolio2.svg', order1: '2', order2: '1',
+},
+{
+  title: 'Facebook _360', content: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', imageDesktop: './IMG/Snap3.png', imageMobile: './IMG/Snapshoot-Portfolio-1.svg', order1: '1', order2: '2',
+},
+{
+  title: 'ber Navigation', content: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.', imageDesktop: './IMG/Snap4.png', imageMobile: './IMG/Snapshoot-Portfolio2.svg', order1: '2', order2: '1',
+}];
 
-  standardCard(titleValue, contentValue, imageDesktopValue, imageMobileValue, order1Value, order2Value);
-  }
+for (let i = 0; i < ProjectWrapper.length; i += 1) {
+  const titleValue = ProjectWrapper[i].title;
+  const contentValue = ProjectWrapper[i].content;
+  const imageDesktopValue = ProjectWrapper[i].imageDesktop;
+  const imageMValue = ProjectWrapper[i].imageMobile;
+  const order1Value = ProjectWrapper[i].order1;
+  const order2Value = ProjectWrapper[i].order2;
+
+  standardCard(titleValue, contentValue, imageDesktopValue, imageMValue, order1Value, order2Value);
+}
