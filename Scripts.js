@@ -406,19 +406,24 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
 
 // Form validation
 const form = document.querySelector('form');
-const email = document.querySelector('#email-input');
+const Email = document.querySelector('#email-input');
 const p = document.querySelector('#submit-validation-text');
+const formStorage = { name: '', email: '', message: '' };
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#email-input');
+const formMsg = document.querySelector('#form-message');
 
 form.onsubmit = (e) => {
-  if (/[A-Z]/.test(email.value)) {
+  if (/[A-Z]/.test(Email.value)) {
     p.textContent = 'Email must be lowercase!';
     e.preventDefault();
-    email.reportValidity();
+    Email.reportValidity();
   } else {
     p.textContent = '';
     form.onsubmit = true;
   }
 };
+
 
 // Form local storage availability checker function
 function isStorageAvailable(type) {
@@ -455,3 +460,16 @@ form.addEventListener('input', () => {
     localStorage.setItem('formValues', JSON.stringify(formStorage));
   }
 });
+
+// Form auto-fill:
+// When the user loads the page, if there is any data in the local storage
+// the input fields are pre-filled with this data
+if (localStorage.getItem('formValues') !== undefined) {
+  // Parse the data
+  const formData = JSON.parse(localStorage.getItem('formValues'));
+
+  // Populate the form with the data
+  formName.value = formData.name;
+  formEmail.value = formData.email;
+  formMsg.value = formData.message;
+}
