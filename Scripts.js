@@ -411,7 +411,7 @@ const p = document.querySelector('#submit-validation-text');
 const formStorage = { name: '', email: '', message: '' };
 const formName = document.querySelector('#name');
 const formEmail = document.querySelector('#email-input');
-const formMsg = document.querySelector('#form-message');
+const formContent = document.querySelector('#form-message');
 
 form.onsubmit = (e) => {
   if (/[A-Z]/.test(Email.value)) {
@@ -454,22 +454,22 @@ form.addEventListener('input', () => {
     // Update the storage values
     formStorage.name = formName.value;
     formStorage.email = formEmail.value;
-    formStorage.message = formMsg.value;
+    formStorage.message = formContent.value;
 
     // Store them to the localStorage
-    localStorage.setItem('formValues', JSON.stringify(formStorage));
+    localStorage.setItem('formState', JSON.stringify(formStorage));
   }
 });
 
 // Form auto-fill:
 // When the user loads the page, if there is any data in the local storage
 // the input fields are pre-filled with this data
-if (localStorage.getItem('formValues') !== undefined) {
+if (localStorage.getItem('formState') !== undefined) {
   // Parse the data
-  const formData = JSON.parse(localStorage.getItem('formValues'));
+  const formData = JSON.parse(localStorage.getItem('formState'));
 
   // Populate the form with the data
   formName.value = formData.name;
   formEmail.value = formData.email;
-  formMsg.value = formData.message;
+  formContent.value = formData.message;
 }
