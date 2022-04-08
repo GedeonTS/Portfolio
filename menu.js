@@ -56,7 +56,7 @@ link3.addEventListener('click', () => {
   section1.classList.remove('blur');
 });
 
-//  middle section
+// MIDDLE SECTION
 
 //  1st step create elements
 const body = document.querySelector('body');
@@ -203,7 +203,7 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   project1ImageDesktop.style.order = inputs.order1;
   divContainer1.style.order = inputs.order2;
 
-  // popup creation
+  // POPUP CREATION
 
   // variables declaration
   const popupSection = document.createElement('section');
@@ -329,7 +329,8 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
 
   imagelive.src = './ICONS/see-live.png';
   imageSrc.src = './ICONS/see-source.png';
-
+  imagelive.classList.add('see-button-image');
+  imageSrc.classList.add('see-button-image');
   // Attaching current variable to DOM tree
 
   body.append(popupSection);
@@ -353,6 +354,8 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   popli3.append(btna3);
 
   seeDiv.append(btnb1, btnb2);
+  btnb1.append(imagelive);
+  btnb2.append(imageSrc);
 
   // popup-window manipulation
   // const popupWindow = document.getElementById('popupWindoW');
@@ -400,3 +403,19 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
 
   standardCard(titleValue, contentValue, imageDesktopValue, imageMValue, order1Value, order2Value);
 }
+
+// Form validation
+const form = document.querySelector('form');
+const email = document.querySelector('#email-input');
+const p = document.querySelector('#submit-validation-text');
+
+form.onsubmit = (e) => {
+  if (/[A-Z]/.test(email.value)) {
+    p.textContent = 'Email must be lowercase!';
+    e.preventDefault();
+    email.reportValidity();
+  } else {
+    p.textContent = '';
+    form.onsubmit = true;
+  }
+};
