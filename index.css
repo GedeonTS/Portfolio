@@ -219,12 +219,6 @@ main {
   margin-bottom: 20px;
 }
 
-.seeAlt {
-  width: 150px;
-  display: inline;
-  font-size: 12px !important;
-}
-
 .see-button-image {
   width: 10px;
   height: 10px;
@@ -654,6 +648,14 @@ button:active {
   width: 170px;
   margin-left: 24px;
 }
+
+.seeAlt {
+  /* width: 150px; */
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+}
+
 
 @media only screen and (min-width: 768px) {
   body {
