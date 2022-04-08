@@ -568,6 +568,11 @@ main {
   color: #6070ff;
 }
 
+#submit-validation-text {
+  color: yellow;
+  margin-top: -10px;
+}
+
 .get {
   color: #000;
 }
@@ -577,7 +582,7 @@ main {
 }
 
 .get:focus {
-  color: #c7ccfc;
+  color: #bbb;
 }
 
 .get:active {
@@ -1128,6 +1133,11 @@ button:active {
   .btn10 {
     margin-left: 200px;
     margin-bottom: 127px;
+  }
+
+  #submit-validation-text {
+    margin-top: -120px;
+    margin-bottom: 120px;
   }
 
   .user-input {
