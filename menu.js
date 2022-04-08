@@ -401,3 +401,28 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
   standardCard(titleValue, contentValue, imageDesktopValue, imageMValue, order1Value, order2Value);
 }
 
+// Form validation
+const form = document.querySelector('form');
+const email = document.querySelector('#email-input'); // Don't forget to fix id typo in html
+const p = document.querySelector('#submit-validation-text');
+
+// Option 1
+email.addEventListener('input', () => {
+  if (/[A-Z]/.test(email.value)) {
+    p.textContent = 'email must be all lowercase!';
+    form.onsubmit = (e) => e.preventDefault();
+    email.reportValidity();
+  } else {
+    p.textContent = '';
+  }
+});
+// Option 2
+// form.onsubmit = (e) => {
+//   if (/[A-Z]/.test(email.value)) {
+//     p.textContent = 'email must be all lowercase!';
+//     e.preventDefault();
+//     email.reportValidity();
+//   } else {
+//     p.textContent = '';
+//   }
+// };
