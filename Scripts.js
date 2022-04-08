@@ -406,16 +406,69 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
 
 // Form validation
 const form = document.querySelector('form');
-const email = document.querySelector('#email-input');
+const Email = document.querySelector('#email-input');
 const p = document.querySelector('#submit-validation-text');
+const formStorage = { name: '', email: '', message: '' };
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#email-input');
+const formContent = document.querySelector('#form-message');
 
 form.onsubmit = (e) => {
-  if (/[A-Z]/.test(email.value)) {
+  if (/[A-Z]/.test(Email.value)) {
     p.textContent = 'Email must be lowercase!';
     e.preventDefault();
-    email.reportValidity();
+    Email.reportValidity();
   } else {
     p.textContent = '';
     form.onsubmit = true;
   }
 };
+
+// Form local storage availability checker function
+function isStorageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      // 1) everything except Firefox
+      // 2) Firefox
+      // test name field too, because code might not be present
+      // 3) everything except Firefox
+      // 4) Firefox
+      // 5) acknowledge QuotaExceededError only if there's something already stored
+      e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
+  }
+}
+
+// Form local storage:
+// When the user changes the content of any input field, the data is saved to the local storage
+form.addEventListener('input', () => {
+  // Check if there is local storage
+  if (isStorageAvailable('localStorage')) {
+    // Update the storage values
+    formStorage.name = formName.value;
+    formStorage.email = formEmail.value;
+    formStorage.message = formContent.value;
+
+    // Store them to the localStorage
+    localStorage.setItem('formState', JSON.stringify(formStorage));
+  }
+});
+
+// Form auto-fill:
+// When the user loads the page, if there is any data in the local storage
+// the input fields are pre-filled with this data
+if (localStorage.getItem('formState') !== undefined) {
+  // Parse the data
+  const formData = JSON.parse(localStorage.getItem('formState'));
+
+  // Populate the form with the data
+  formName.value = formData.name;
+  formEmail.value = formData.email;
+  formContent.value = formData.message;
+}
