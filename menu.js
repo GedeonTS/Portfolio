@@ -203,7 +203,6 @@ function standardCard(title, content, imageDesktop, imageMobile, order1, order2)
   project1ImageDesktop.style.order = inputs.order1;
   divContainer1.style.order = inputs.order2;
 
-
   // POPUP CREATION
 
   // variables declaration
@@ -407,7 +406,7 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
 
 // Form validation
 const form = document.querySelector('form');
-const email = document.querySelector('#email-input'); 
+const email = document.querySelector('#email-input');
 const p = document.querySelector('#submit-validation-text');
 
 form.onsubmit = (e) => {
