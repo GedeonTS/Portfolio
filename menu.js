@@ -400,3 +400,4 @@ for (let i = 0; i < ProjectWrapper.length; i += 1) {
 
   standardCard(titleValue, contentValue, imageDesktopValue, imageMValue, order1Value, order2Value);
 }
+
