@@ -424,7 +424,6 @@ form.onsubmit = (e) => {
   }
 };
 
-
 // Form local storage availability checker function
 function isStorageAvailable(type) {
   let storage;
