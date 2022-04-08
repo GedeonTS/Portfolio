@@ -406,23 +406,13 @@ const form = document.querySelector('form');
 const email = document.querySelector('#email-input'); // Don't forget to fix id typo in html
 const p = document.querySelector('#submit-validation-text');
 
-// Option 1
-email.addEventListener('input', () => {
+form.onsubmit = (e) => {
   if (/[A-Z]/.test(email.value)) {
-    p.textContent = 'email must be all lowercase!';
-    form.onsubmit = (e) => e.preventDefault();
+    p.textContent = 'Email must be lowercase!';
+    e.preventDefault();
     email.reportValidity();
   } else {
     p.textContent = '';
+    form.onsubmit = true;
   }
-});
-// Option 2
-// form.onsubmit = (e) => {
-//   if (/[A-Z]/.test(email.value)) {
-//     p.textContent = 'email must be all lowercase!';
-//     e.preventDefault();
-//     email.reportValidity();
-//   } else {
-//     p.textContent = '';
-//   }
-// };
+};

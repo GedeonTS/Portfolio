@@ -577,7 +577,11 @@ main {
 }
 
 .get:focus {
-  color: #000;
+  color: #c7ccfc;
+}
+
+.get:active {
+  background-color: rgb(150, 150, 150);
 }
 
 .user-input {
