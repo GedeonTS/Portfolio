@@ -387,10 +387,10 @@ const ProjectWrapper = [{
   title: 'Multi-Post Stories', content: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.', imageDesktop: './IMG/Snap2.png', imageMobile: './IMG/Snapshoot-Portfolio2.svg', order1: '2', order2: '1',
 },
 {
-  title: 'Facebook _360', content: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', imageDesktop: './IMG/Snap3.png', imageMobile: './IMG/Snapshoot-Portfolio-1.svg', order1: '1', order2: '2',
+  title: 'Facebook 360', content: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.', imageDesktop: './IMG/Snap3.png', imageMobile: './IMG/Snapshoot-Portfolio-1.svg', order1: '1', order2: '2',
 },
 {
-  title: 'ber Navigation', content: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.', imageDesktop: './IMG/Snap4.png', imageMobile: './IMG/Snapshoot-Portfolio2.svg', order1: '2', order2: '1',
+  title: 'Uber Navigation', content: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.', imageDesktop: './IMG/Snap4.png', imageMobile: './IMG/Snapshoot-Portfolio2.svg', order1: '2', order2: '1',
 }];
 
 for (let i = 0; i < ProjectWrapper.length; i += 1) {
