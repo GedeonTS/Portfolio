@@ -2,18 +2,21 @@
 body {
   margin: 0;
   padding: 0;
+  border: none;
   font-family: "Poppins", sans-serif;
+  background: #E5E5E5;
 }
 
 header {
   display: flex;
-  background-color: rgba(100, 27, 27, 0.884);
+  background-color: #fff;
   flex-direction: row;
   justify-content: space-between;
-  height: 8vh;
+  height: 10vh;
   padding-left: 6.4%;
   padding-right: 6.4%;
   align-items: center;
+  
 }
 
 .logo {
@@ -29,8 +32,13 @@ header {
 .headline-section {
   display: flex;
   flex-direction: column;
-  margin-left: 6.4%;
+  background-color: #fff;
   background-image: url(./IMG/header-shapesmobile.png);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 10%;
+  margin-top: -1px;
 }
 
 .headline-section h1 {
@@ -38,7 +46,8 @@ header {
   line-height: 52px;
   color: #172b4d;
   width: 80%;
-  padding-top: 10%;
+  margin-left: 6.4%;
+  padding-top: 15%;
   margin-bottom: 0;
 }
 
@@ -47,9 +56,11 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  color: #344563;
   line-height: 24px;
   margin-bottom: 0;
-  width: 95%;
+  width: 85%;
+  margin-left: 6.4%;
 }
 
 .headline-section h2 {
@@ -58,12 +69,22 @@ header {
   line-height: 24px;
   margin-top: 0;
   color: #7f8cff;
+  margin-left: 6.4%;
 }
 
 .socials {
-  width:40%;
+  width:150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: 6.4%;
+}
+
+@media screen and (min-width:500px) {
+  .headline-section {
+    background-image: url(./IMG/HeaderWidebg@2x.png);
+  }
+  
+  
 }
