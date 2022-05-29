@@ -4,7 +4,7 @@ body {
   padding: 0;
   border: none;
   font-family: "Poppins", sans-serif;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
   padding-left: 6.4%;
   padding-right: 6.4%;
   align-items: center;
-  
 }
 
 .logo {
@@ -73,7 +72,7 @@ header {
 }
 
 .socials {
-  width:150px;
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -81,10 +80,52 @@ header {
   margin-left: 6.4%;
 }
 
-@media screen and (min-width:500px) {
+.popup-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6070ffa9;
+  position: fixed;
+  z-index: 1;
+}
+
+.fa-remove {
+  font-size: 30px;
+  color: #fff;
+  padding-top: 7%;
+  margin-left: 87%;
+}
+
+.popup-menu-items {
+  list-style: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.popup-menu-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+.overflow {
+  overflow-y:hidden ;
+}
+
+@media screen and (min-width: 500px) {
   .headline-section {
     background-image: url(./IMG/HeaderWidebg@2x.png);
   }
-  
-  
 }
