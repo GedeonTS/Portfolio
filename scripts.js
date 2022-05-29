@@ -7,9 +7,8 @@ const logo = document.querySelector('.logo');
 const openPopup = document.querySelector('.humburger');
 const closePopup = document.querySelector('.fa-remove');
 
-const portfolio = document.getElementById('portfolio-link');
-const contact = document.getElementById('contact-link');
-const about = document.getElementById('about-link');
+const popupLinks = document.querySelectorAll('.popup-link')
+
 
 const showPopup = () => {
     popupMenu.classList.remove('hide');
@@ -27,12 +26,25 @@ const hidePopup = () => {
     headSection.classList.remove('blur');
     openPopup.classList.remove('hide');
     logo.classList.remove('hide');
-    
+
 }
 
 openPopup.addEventListener('click', () => {
     showPopup();
 });
+
 closePopup.addEventListener('click', () => {
     hidePopup();
-})
+});
+
+popupLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hidePopup();
+    });
+});
+
+
+// work section
+const workSection = document.querySelector('.works')
+workSection.innerHTML = `<article><div><img src"" class="card-image">
+</div><h2>Tonic</h2><ul><li>CANOPY</li><li>CANOPY</li><li>CANOPY</li><li>CANOPY</li><li>CANOPY</li></ul></div></article>`
