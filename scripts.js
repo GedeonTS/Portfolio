@@ -50,7 +50,7 @@ const workSection = document.querySelector('.works')
 workSection.innerHTML = `<article>
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-mobile">
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-desktop">
-<div class="side-section">
+<section class="side-section">
 <h2 class="project-title">Tonic</h2>
 <ul class="project-highlights">
 <li class="organisation">Microverse</li>
@@ -62,11 +62,11 @@ workSection.innerHTML = `<article>
 <p class="project-descritpion">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
 <ul class="stacks"><li class="stack">javaScript</li><li class="stack">Html</li></ul>
 <button class="project-btn">See project</button>
-</div>
+</section>
 </article><article>
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-mobile">
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-desktop">
-<div class="side-section">
+<section class="side-section">
 <h2 class="project-title">Tonic</h2>
 <ul class="project-highlights">
 <li class="organisation">Microverse</li>
@@ -78,5 +78,5 @@ workSection.innerHTML = `<article>
 <p class="project-descritpion">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
 <ul class="stacks"><li class="stack">javaScript</li><li class="stack">Html</li></ul>
 <button class="project-btn">See project</button>
-</div>
+</section>
 </article>`
