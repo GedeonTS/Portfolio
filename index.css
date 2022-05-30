@@ -28,6 +28,10 @@ header {
   color: #6070ff;
 }
 
+.menu {
+  display: none;
+}
+
 .headline-section {
   display: flex;
   flex-direction: column;
@@ -121,11 +125,221 @@ header {
 }
 
 .overflow {
-  overflow-y:hidden ;
+  overflow-y: hidden;
 }
 
-@media screen and (min-width: 500px) {
+.works {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  margin-top: 114px;
+  gap: 13.13%;
+}
+
+article {
+  width: 87.2%;
+  height: 82.38806vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.card-image-mobile {
+  width: 90.214067%;
+  margin-left: 4.892966%;
+  margin-top: 4.89296%;
+  height: 32.8358vh;
+}
+
+.card-image-desktop {
+  display: none;
+}
+
+.project-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4.892966%;
+}
+
+.project-highlights {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-left: 4.892966%;
+}
+
+.project-highlights li {
+  padding-right: 3.6%;
+}
+
+.organisation {
+  color: #344563;
+}
+
+.project-descritpion {
+  margin-left: 4.892966%;
+}
+
+.stacks {
+  display: flex;
+  list-style: none;
+  padding-left: 4.892966%;
+}
+
+.stack {
+  background: #ebebff;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 1rem;
+  letter-spacing: 0.03em;
+  padding: 0.4rem;
+  border-radius: 8px;
+}
+
+.project-descritpion {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-right: 4.892966%;
+  color: #344563;
+}
+
+.project-btn {
+  padding: 0.5rem;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background: #fff;
+  width: 7rem;
+  margin-left: 4.892966%;
+}
+
+.project-btn:hover {
+  color: #fff;
+  background: #396df2;
+  transition: all ease-out 0.5s;
+}
+
+/* ============================(WIDER SCREENS)==================================*/
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7.64vh;
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+    align-items: center;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .menu {
+    list-style: none;
+    font-style: Medium;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10.6944vw;
+  }
+
+  .menu li {
+    padding-left: 8.53%;
+  }
+
+  .menu li a {
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    color:#396df2;
+    font-weight: 700;
+    transition: all ease-out 0.4s;
+  }
+
   .headline-section {
     background-image: url(./IMG/HeaderWidebg@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-left: 18.055%;
+    padding-right: 18.055%;
+  }
+  
+  .headline-section h1 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    width: 40.5%;
+    margin-left: 0;
+    padding-top: 15%;
+    margin-bottom: 0;
+  }
+
+  .headline-section p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #344563;
+    line-height: 24px;
+    margin-bottom: 0;
+    width: 87.2%;
+    margin-left: 0;
+  }
+  
+  .headline-section h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    color: #7f8cff;
+    margin-left: 0;
+  }
+  
+  .socials {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card-image-mobile {
+    display: none;
+  }
+
+  .card-image-desktop {
+    display: flex;
   }
 }
