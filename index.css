@@ -280,7 +280,7 @@ article {
   }
 
   .menu li a:hover {
-    color:#396df2;
+    color: #396df2;
     font-weight: 700;
     transition: all ease-out 0.4s;
   }
@@ -294,7 +294,7 @@ article {
     padding-left: 18.055%;
     padding-right: 18.055%;
   }
-  
+
   .headline-section h1 {
     font-size: 40px;
     line-height: 52px;
@@ -316,7 +316,7 @@ article {
     width: 87.2%;
     margin-left: 0;
   }
-  
+
   .headline-section h2 {
     font-weight: 500;
     font-size: 16px;
@@ -325,7 +325,7 @@ article {
     color: #7f8cff;
     margin-left: 0;
   }
-  
+
   .socials {
     width: 150px;
     display: flex;
@@ -339,7 +339,25 @@ article {
     display: none;
   }
 
+  article {
+    width: 87.2%;
+    height: 82.38806vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+
   .card-image-desktop {
     display: flex;
+    width: 47.05%;
+    margin-left: 1.892966%;
+    margin-top: 2.48%;
+    height: 90.32%;
+  }
+
+  .side-section {
+    margin-top: 4.48%;
+    margin-right: 4.48%;
   }
 }
