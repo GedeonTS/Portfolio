@@ -47,10 +47,10 @@ popupLinks.forEach(link => {
 // work section
 const projects = [{ imageMobile: '', imageDesktop: '', projectTitle: '', stack:'',year:''}]
 const workSection = document.querySelector('.works')
-workSection.innerHTML = `<article><div>
+workSection.innerHTML = `<article>
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-mobile">
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-desktop">
-</div>
+<div class="side-section">
 <h2 class="project-title">Tonic</h2>
 <ul class="project-highlights">
 <li class="organisation">Microverse</li>
@@ -63,10 +63,10 @@ workSection.innerHTML = `<article><div>
 <ul class="stacks"><li class="stack">javaScript</li><li class="stack">Html</li></ul>
 <button class="project-btn">See project</button>
 </div>
-</article><article><div>
+</article><article>
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-mobile">
 <img src="./IMG/SnapshootPortfolio.png" class="card-image-desktop">
-</div>
+<div class="side-section">
 <h2 class="project-title">Tonic</h2>
 <ul class="project-highlights">
 <li class="organisation">Microverse</li>
