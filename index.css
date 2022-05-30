@@ -361,6 +361,7 @@ article {
 
   article:hover {
     border: solid 1px #396df2;
+    box-shadow: 10px 10px 10px #7a869a8e;;
   }
 
   .card-image-desktop {
