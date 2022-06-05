@@ -78,6 +78,9 @@ header {
 .socials {
   width: 150px;
   display: flex;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -315,7 +318,7 @@ article {
 .about-second {
   list-style: none;
   padding-left: 6.4%;
-  color: #344563
+  color: #344563;
 }
 
 .about-second li {
@@ -405,7 +408,7 @@ article {
   margin-bottom: 20px;
   margin-left: 6.4%;
   border-radius: 10px;
-  color: #B3BAC5;
+  color: #b3bac5;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -427,21 +430,16 @@ article {
 }
 
 .submit-button:hover {
-color: #fff;
-background-color: #172b4d;
+  color: #fff;
+  background-color: #172b4d;
 }
 
 .submit-button:active {
   color: #fff;
-background-color: #172b4da6;
+  background-color: #172b4da6;
 }
 
-.about-second {
-  list-style: none;
-  padding-left: 0%;
-  width: 49%;
-  margin-top: 10%;
-}
+
 /* ============================(WIDER SCREENS)==================================*/
 
 @media screen and (min-width: 768px) {
@@ -463,8 +461,8 @@ background-color: #172b4da6;
   }
 
   .logo:hover {
-   margin-left: 9%;
-   transition: margin-left ease 1s;
+    margin-left: 9%;
+    transition: margin-left ease 1s;
     /* margin-left: 6.4%; */
   }
 
@@ -551,7 +549,7 @@ background-color: #172b4da6;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0;
+    margin-left: 6.4%;
   }
 
   .works {
@@ -602,6 +600,13 @@ background-color: #172b4da6;
     margin-left: 3%;
   }
 
+  .about-second {
+    list-style: none;
+    padding-left: 0%;
+    width: 49%;
+    margin-top: 10%;
+  }
+
   .about {
     height: auto;
     width: 100%;
@@ -613,7 +618,7 @@ background-color: #172b4da6;
     padding-top: 0;
     padding-bottom: 133px;
   }
-  
+
   .about-top {
     margin-left: 4%;
     width: 40%;
@@ -621,7 +626,6 @@ background-color: #172b4da6;
 
   .languages {
     display: flex;
-
   }
 
   .languages li {
@@ -640,8 +644,8 @@ background-color: #172b4da6;
 
   .languages li:hover {
     background-color: #f8f9fab0;
-    border: solid 0.4px #B3BAC5;
-    box-shadow:4px 4px 4px #B3BAC5;
+    border: solid 0.4px #b3bac5;
+    box-shadow: 4px 4px 4px #b3bac5;
     transition: box-shadow ease-in 1s;
   }
 
@@ -655,14 +659,13 @@ background-color: #172b4da6;
   .socials li img:hover {
     width: 24px;
     height: 24px;
-
   }
 
   .contact {
     display: flex;
     flex-direction: column;
-    background: hsl(234, 100%, 69%) url(./IMG/contactformbackgroundshapes@2x.png) 100% 100px
-      no-repeat;
+    background: hsl(234, 100%, 69%)
+      url(./IMG/contactformbackgroundshapes@2x.png) 100% 100px no-repeat;
     color: #fff;
     justify-items: center;
     align-items: center;
@@ -671,7 +674,6 @@ background-color: #172b4da6;
     height: auto;
     margin: 0;
     padding: 0;
-
   }
 
   form {
@@ -688,7 +690,7 @@ background-color: #172b4da6;
     margin-top: 12%;
     margin-bottom: 0;
   }
-  
+
   .contact p {
     font-weight: 400;
     font-size: 20px;
@@ -696,7 +698,7 @@ background-color: #172b4da6;
     width: 45%;
     text-align: center;
   }
-  
+
   .contact input {
     width: 30%;
     height: 48px;
@@ -704,13 +706,13 @@ background-color: #172b4da6;
     margin-bottom: 20px;
     border-radius: 0;
   }
-  
+
   .contact textarea {
     width: 30%;
     height: 170px;
     margin-bottom: 20px;
     border-radius: 0;
-    color: #B3BAC5;
+    color: #b3bac5;
     font-weight: 400;
     font-size: 15px;
     margin-left: 0;
@@ -730,7 +732,4 @@ background-color: #172b4da6;
     font-size: 17px;
     line-height: 24px;
   }
-  
-  
-
 }
