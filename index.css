@@ -4,7 +4,7 @@ body {
   padding: 0;
   border: none;
   font-family: "Poppins", sans-serif;
-  background: #e5e5e5;
+  background: #f8f9fa;
 }
 
 header {
@@ -37,10 +37,10 @@ header {
   flex-direction: column;
   background-color: #fff;
   background-image: url(./IMG/header-shapesmobile.png);
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 10%;
+  background-size: contain;
+  border-bottom-left-radius: 100px;
   margin-top: -1px;
 }
 
@@ -133,8 +133,7 @@ header {
   display: grid;
   justify-items: center;
   margin-top: 114px;
-  margin-bottom: 114px;
-  gap: 6%;
+  margin-bottom: 26px;
 }
 
 article {
@@ -144,6 +143,7 @@ article {
   flex-direction: column;
   background-color: #fff;
   border-radius: 1rem;
+  margin-bottom: 88px;
 }
 
 .card-image-mobile {
@@ -240,18 +240,117 @@ article {
   transition: all ease-out 0.5s;
 }
 
+.resume-btn {
+  padding: 0.5rem;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  background: #fff;
+  width: 9rem;
+  margin-left: 6.4%;
+}
+
+.resume-btn:hover {
+  color: #fff;
+  background: #396df2;
+  transition: all ease-out 0.5s;
+}
+
+.about {
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-top-right-radius: 100px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.about h2 {
+  margin-top: 114px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 7rem;
+  margin-bottom: 0;
+  margin-left: 6.4%;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 87.2%;
+  color: #344563;
+  margin-left: 6.4%;
+}
+
+.about h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  color: #7f8cff;
+  margin-left: 6.4%;
+}
+
+.socials-about {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6.4%;
+  margin-bottom: 5px;
+}
+
+.about-second {
+  list-style: none;
+  padding-left: 6.4%;
+}
+
+.about-second li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 6.4%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.list-item {
+  border-bottom: solid 1px #DFE1E6;
+}
+
+.about-second li img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ============================(WIDER SCREENS)==================================*/
 
 @media screen and (min-width: 768px) {
   header {
     display: flex;
+    position: fixed;
+    width: 100%;
     background-color: #fff;
     flex-direction: row;
     justify-content: space-between;
     height: 7.64vh;
-    padding-left: 6.4%;
-    padding-right: 6.4%;
+    padding-left: 0;
+    padding-right: 0;
     align-items: center;
+  }
+
+  .logo {
+    margin-left: 6.4%;
   }
 
   .humburger {
@@ -266,11 +365,13 @@ article {
     color: #344563;
     display: flex;
     flex-direction: row;
-    padding-right: 10.6944vw;
+    margin: 0;
+    padding: 0;
+    margin-right: 13.69vw;
   }
 
   .menu li {
-    padding-left: 8.53%;
+    padding-left: 1vw;
   }
 
   .menu li a {
@@ -287,11 +388,10 @@ article {
   }
 
   .headline-section {
-    background-image: url(./IMG/HeaderWidebg@2x.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background: rgb(255, 255, 255) url(./IMG/HeaderWidebg@2x.png) 100% 65px
+      no-repeat;
+    background-size: contain;
+    height: 120vh;
     padding-left: 18.055%;
     padding-right: 18.055%;
   }
@@ -302,7 +402,7 @@ article {
     color: #172b4d;
     width: 40.5%;
     margin-left: 0;
-    padding-top: 15%;
+    padding-top: 35%;
     margin-bottom: 0;
   }
 
@@ -340,10 +440,9 @@ article {
     width: 100%;
     display: grid;
     justify-items: center;
-    margin-top: 114px;
-    margin-bottom: 114px;
-    gap: 6%;
-  }  
+    margin-top: 142px;
+    margin-bottom: 26px;
+  }
 
   .card-image-mobile {
     display: none;
@@ -351,17 +450,19 @@ article {
 
   article {
     width: 87.2%;
-    height: 82.38806vh;
+    height: 72.38806vh;
     display: flex;
     flex-direction: row;
     background-color: #fff;
     border-radius: 1rem;
     padding-right: 2.892966%;
+    margin-bottom: 142px;
   }
 
   article:hover {
-    border: solid 1px #396df2;
-    box-shadow: 10px 10px 10px #7a869a8e;;
+    border: solid 1px #396df2a4;
+    box-shadow: 10px 10px 10px #7a869a8e;
+    transition: box-shadow 0.5s ease-in-out;
   }
 
   .card-image-desktop {
@@ -379,6 +480,6 @@ article {
   .side-section {
     margin-top: 4.48%;
     margin-right: 4.48%;
-    margin-left:3% ;
+    margin-left: 3%;
   }
 }
