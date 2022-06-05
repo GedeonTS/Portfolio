@@ -145,7 +145,7 @@ article {
   background-color: #fff;
   border-radius: 1rem;
   margin-bottom: 88px;
-  border:solid 1px #dfe1e6;
+  border: solid 1px #dfe1e6;
 }
 
 .card-image-mobile {
@@ -253,6 +253,7 @@ article {
   background: #fff;
   width: 9rem;
   margin-left: 6.4%;
+  margin-bottom: 50px;
 }
 
 .resume-btn:hover {
@@ -262,7 +263,7 @@ article {
 }
 
 .about {
-  height: 200vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -270,6 +271,7 @@ article {
   border-top-right-radius: 100px;
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 133px;
 }
 
 .about h2 {
@@ -307,12 +309,13 @@ article {
   justify-content: space-between;
   align-items: center;
   margin-left: 6.4%;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .about-second {
   list-style: none;
   padding-left: 6.4%;
+  color: #344563
 }
 
 .about-second li {
@@ -326,27 +329,27 @@ article {
   line-height: 24px;
 }
 
+.languages {
+  margin: 0;
+  padding: 0;
+}
+
 .languages li {
   background-color: #f8f9fa;
   display: flex;
   margin-left: 0;
   flex-direction: row;
   justify-content: left;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 10px #fff;
   align-items: center;
   height: 66.72px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px; 
-}
-
-.languages {
-  margin: 0;
-  padding: 0;
+  line-height: 24px;
 }
 
 .list-item {
-  border-bottom: solid 1px #DFE1E6;
+  border-bottom: solid 1px #dfe1e6;
 }
 
 .arrow-icons {
@@ -359,6 +362,86 @@ article {
   width: 48px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  background: hsl(234, 100%, 69%) url(./IMG/shapes-contact-mobile.png) 100% 1%
+    no-repeat;
+  color: #fff;
+  align-items: center;
+  background-size: contain;
+  border-top-left-radius: 80px;
+  height: auto;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 110px;
+  margin-bottom: 0;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  width: 87.2%;
+  text-align: center;
+}
+
+.contact input {
+  width: 87.2%;
+  height: 48px;
+  margin-bottom: 20px;
+  margin-left: 6.4%;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact textarea {
+  width: 87.2%;
+  height: 170px;
+  margin-bottom: 20px;
+  margin-left: 6.4%;
+  border-radius: 10px;
+  color: #B3BAC5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+}
+
+.submit-button {
+  height: 3rem;
+  width: 9rem;
+  margin-bottom: 5rem;
+  margin-left: 6.4%;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #6070ff;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.submit-button:hover {
+color: #fff;
+background-color: #172b4d;
+}
+
+.submit-button:active {
+  color: #fff;
+background-color: #172b4da6;
+}
+
+.about-second {
+  list-style: none;
+  padding-left: 0%;
+  width: 49%;
+  margin-top: 10%;
+}
 /* ============================(WIDER SCREENS)==================================*/
 
 @media screen and (min-width: 768px) {
@@ -377,6 +460,12 @@ article {
 
   .logo {
     margin-left: 6.4%;
+  }
+
+  .logo:hover {
+   margin-left: 9%;
+   transition: margin-left ease 1s;
+    /* margin-left: 6.4%; */
   }
 
   .humburger {
@@ -455,6 +544,9 @@ article {
 
   .socials {
     width: 150px;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -509,4 +601,136 @@ article {
     margin-right: 4.48%;
     margin-left: 3%;
   }
+
+  .about {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-top-right-radius: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 133px;
+  }
+  
+  .about-top {
+    margin-left: 4%;
+    width: 40%;
+  }
+
+  .languages {
+    display: flex;
+
+  }
+
+  .languages li {
+    background-color: #f8f9fa;
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 66.72px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 122px;
+    height: 120px;
+  }
+
+  .languages li:hover {
+    background-color: #f8f9fab0;
+    border: solid 0.4px #B3BAC5;
+    box-shadow:4px 4px 4px #B3BAC5;
+    transition: box-shadow ease-in 1s;
+  }
+
+  .languages-item {
+    height: 48px;
+    width: 48px;
+    margin-top: 1rem;
+    margin-left: -2rem;
+  }
+
+  .socials li img:hover {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background: hsl(234, 100%, 69%) url(./IMG/contactformbackgroundshapes@2x.png) 100% 100px
+      no-repeat;
+    color: #fff;
+    justify-items: center;
+    align-items: center;
+    background-size: contain;
+    border-top-left-radius: 80px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 110px;
+    margin-bottom: 0;
+  }
+  
+  .contact p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .contact input {
+    width: 30%;
+    height: 48px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    border-radius: 0;
+  }
+  
+  .contact textarea {
+    width: 30%;
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    color: #B3BAC5;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 0;
+    line-height: 24px;
+  }
+
+  .submit-button {
+    height: 3rem;
+    width: 9rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #6070ff;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
+  
+
 }
