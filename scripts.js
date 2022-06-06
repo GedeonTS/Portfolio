@@ -7,7 +7,8 @@ const logo = document.querySelector('.logo');
 const openPopup = document.querySelector('.humburger');
 const closePopup = document.querySelector('.fa-remove');
 
-const popupLinks = document.querySelectorAll('.popup-link')
+const popupLinks = document.querySelectorAll('.popup-link');
+const projectPopup = document.getElementById('project-popup');
 
 
 const showPopup = () => {
@@ -45,7 +46,36 @@ popupLinks.forEach(link => {
 
 
 // works section
-const projects = [{ imageMobile: './IMG/SnapshootPortfolio.png', imageDesktop: './IMG/SnapshootPortfolio.png', projectTitle: 'Leaderboard', stack: 'Front End Dev', year: '2022', order: '', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', technologies: ["javasCript", "Html", "css"] },{ imageMobile: './IMG/SnapshootPortfolio.png', imageDesktop: './IMG/SnapshootPortfolio.png', projectTitle: 'Leaderboard', stack: 'Front End Dev', year: '2022', order: '', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', technologies: ["javasCript", "Html", "css"] },{ imageMobile: './IMG/SnapshootPortfolio.png', imageDesktop: './IMG/SnapshootPortfolio.png', projectTitle: 'Leaderboard', stack: 'Front End Dev', year: '2022', order: '', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', technologies: ["javasCript", "Html", "css"] }]
+const projects = [{
+    imageMobile: './IMG/SnapshootPortfolio.png',
+    imageDesktop: './IMG/SnapshootPortfolio.png',
+    projectTitle: 'Leaderboard',
+    stack: 'Front End Dev',
+    year: '2022',
+    order: 'this is a long descritpion for popup',
+    description2:"",
+    description: 'A daily selection of privately personalized reads; no accounts or sign- ups required.', technologies: ["javasCript", "Html", "css"]
+}, {
+    imageMobile: './IMG/SnapshootPortfolio.png',
+    imageDesktop: './IMG/SnapshootPortfolio.png',
+    projectTitle: 'Leaderboard',
+    stack: 'Front End Dev',
+    year: '2022',
+    order: 'this is a long descritpion for popup',
+    description2:"",
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ["javasCript", "Html", "css"]
+}, {
+    imageMobile:  './IMG/SnapshootPortfolio.png',
+    imageDesktop: './IMG/SnapshootPortfolio.png',
+    projectTitle: 'Leaderboard',
+    stack: 'Front End Dev',
+    year: '2022',
+    order: '',
+    description2:"this is a long descritpion for popupthis is a long descritpion for popup",
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ["javasCript", "Html", "css"]
+}]
 const workSection = document.querySelector('.works');
 projects.forEach(project => {
     workSection.innerHTML += `<article>
@@ -61,10 +91,49 @@ projects.forEach(project => {
 <li>${project.year}</li>
 </ul>
 <p class="project-descritpion">${project.description}</p>
-<ul class="stacks"><li class="stack">${project.technologies[0]}</li><li class="stack">${project.technologies[1]}</li><li class="stack">${project.technologies[2]}</li></ul>
+<ul class="stacks">
+<li class="stack">${project.technologies[0]}</li>
+<li class="stack">${project.technologies[1]}</li>
+<li class="stack">${project.technologies[2]}</li>
+</ul>
 <button class="project-btn">See project</button>
 </section>
 </article>`
 
+    // project popup section
+
+    projectPopup.innerHTML = `<div class='popup-content'><div class="popup-header">
+    <h2 class="project-title">${project.projectTitle}</h2>
+   <div class="canel-icon-wrapper"><img class="cancel-icon" src="./ICONS/cancel-icon.png" alt="cancel-icon"></div>
+    </div>
+<ul class="project-highlights">
+<li>CANOPY</li>
+<li><img class="counter" src="./ICONS/Counter.png"></li>
+<li>Back End Dev</li>
+<li><img class="counter" src="./ICONS/Counter.png"></li>
+<li>2015</li>
+</ul>
+<img src="${project.imageMobile}" class="card-image-mobile">
+<img src=".${project.imageDesktop}" class="card-image-desktop">
+<div class="project-content">
+<div class="project-popup-descritpion">
+<p class="project-descritpion">${project.description2}</p>
+</div>
+<div class="right-section">
+<ul class="stacks">
+<li class="stack">${project.technologies[0]}</li>
+<li class="stack">${project.technologies[1]}</li>
+<li class="stack">${project.technologies[2]}</li>
+</ul>
+<div class="project-popup-btns">
+<a src="link to demo" class="project-btn popup-btn popup-btn1">See live <img src="./ICONS/live.png"></a>
+<a src="link to github" class="project-btn popup-btn">See source<img src="./ICONS/github.png"></a>
+</div>
+</div>
+</div>
+</div>
+`
 
 })
+
+
