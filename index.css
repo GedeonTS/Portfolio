@@ -156,10 +156,12 @@ article {
   margin-left: 4.892966%;
   margin-top: 4.89296%;
   height: 32.8358vh;
+  border-radius: 10px;
 }
 
 .card-image-desktop {
   display: none;
+  border-radius: 10px;
 }
 
 .project-title {
@@ -257,6 +259,7 @@ article {
   width: 9rem;
   margin-left: 6.4%;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
 .resume-btn:hover {
@@ -683,14 +686,19 @@ article {
     height: 90.32%;
   }
 
-  .order {
-    order: 1;
-  }
-
+ 
   .side-section {
     margin-top: 4.48%;
     margin-right: 4.48%;
     margin-left: 3%;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
+    order: 2;
   }
 
   .about-second {
@@ -865,7 +873,7 @@ article {
     margin-bottom: 14px;
   }
 
-  .card-image-desktop {
+  .desktop-popup-image {
     width: 96%;
     height: 55%;
   }
