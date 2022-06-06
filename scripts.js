@@ -9,6 +9,7 @@ const closePopup = document.querySelector('.fa-remove');
 
 const popupLinks = document.querySelectorAll('.popup-link');
 const projectPopup = document.querySelector('.popup-overlay');
+const headerSection =document.querySelector('header')
 
 
 /*   popup events  */
@@ -137,18 +138,32 @@ projects.forEach((project)=> {
 
 const seeProjectBtns = document.querySelectorAll('.trigger');
 const popupContent = document.querySelectorAll('.popup-content');
+const cancelIcon = document.querySelectorAll('.popup-header');
 
 
 
-function myf(){ console.log("see btn pressed") }
 
-seeProjectBtns.forEach((seeProjectBtn,i) => {
-    seeProjectBtn.addEventListener('click', myf);
-    function myf() {
+
+seeProjectBtns.forEach((seeProjectBtn, i) => {
+    const revealPopup=()=> {
         projectPopup.classList.remove('hide');
         popupContent[i].classList.remove('hide');
-        body.classList.add('.body-handle');
- }
+        body.style = "overflow-y: hidden";
+        workSection.classList.add('blur');
+        headerSection.classList.add('header-handle')
+    }
+
+    const coverPopup=()=> {
+        projectPopup.classList.add('hide');
+        popupContent[i].classList.add('hide');
+        body.style = "overflow-y: scroll";
+        workSection.classList.remove('blur');
+        headerSection.classList.remove('header-handle')
+    }
+    seeProjectBtn.addEventListener('click', revealPopup);
+    cancelIcon[i].addEventListener('click', coverPopup);
+
+
 })
 
 
