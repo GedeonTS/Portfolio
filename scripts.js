@@ -49,28 +49,28 @@ popupLinks.forEach(link => {
 
 // works section
 const projects = [{
-    imageMobile: './IMG/SnapshootPortfolio.png',
-    imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'the 1st sample',
+    imageMobile: './IMG/projects/Leaderboard.png',
+    imageDesktop: './IMG/projects/Leaderboard.png',
+    projectTitle: 'Leaderboard',
     stack: 'Front End Dev',
     year: '2022',
-    order: 'this is a long descritpion for popup',
-    description2:"",
+    order: 1,
+    description2:'this is a long descritpion for popup',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required.', technologies: ["javasCript", "Html", "css"]
 }, {
-    imageMobile: './IMG/SnapshootPortfolio.png',
-    imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'the 2nd sample',
+    imageMobile: './IMG/projects/movie-website.png',
+    imageDesktop: './IMG/projects/movie-website.png',
+    projectTitle: 'Movie-website',
     stack: 'Front End Dev',
     year: '2022',
-    order: 'this is a long descritpion for popup',
+    order:'',
     description2:"",
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ["javasCript", "Html", "css"]
 }, {
-    imageMobile:  './IMG/SnapshootPortfolio.png',
-    imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'the 3rd sample',
+    imageMobile:  './IMG/projects/math-magician.png',
+    imageDesktop: './IMG/projects/math-magician.png',
+    projectTitle: 'Math magicians',
     stack: 'Front End Dev',
     year: '2022',
     order: '',
@@ -82,7 +82,7 @@ const workSection = document.querySelector('.works');
 projects.forEach((project)=> {
     workSection.innerHTML += `<article>
 <img src="${project.imageMobile}" class="card-image-mobile">
-<img src=".${project.imageDesktop}" class="card-image-desktop">
+<img src=".${project.imageDesktop}" class="card-image-desktop desktop-image">
 <section class="side-section">
 <h2 class="project-title">${project.projectTitle}</h2>
 <ul class="project-highlights">
@@ -115,7 +115,7 @@ projects.forEach((project)=> {
 <li>2015</li>
 </ul>
 <img src="${project.imageMobile}" class="card-image-mobile">
-<img src=".${project.imageDesktop}" class="card-image-desktop">
+<img src=".${project.imageDesktop}" class="card-image-desktop desktop-popup-image">
 <div class="project-content">
 <div class="project-popup-descritpion">
 <p class="project-descritpion">${project.description2}</p>
@@ -139,13 +139,15 @@ projects.forEach((project)=> {
 const seeProjectBtns = document.querySelectorAll('.trigger');
 const popupContent = document.querySelectorAll('.popup-content');
 const cancelIcon = document.querySelectorAll('.popup-header');
+const sideSection = document.querySelectorAll('.side-section');
+const desktopImageSection = document.querySelectorAll('.desktop-image')
 
 
 
 
 
 seeProjectBtns.forEach((seeProjectBtn, i) => {
-    const revealPopup=()=> {
+    const revealPopup = () => {
         projectPopup.classList.remove('hide');
         popupContent[i].classList.remove('hide');
         body.style = "overflow-y: hidden";
@@ -153,7 +155,7 @@ seeProjectBtns.forEach((seeProjectBtn, i) => {
         headerSection.classList.add('header-handle')
     }
 
-    const coverPopup=()=> {
+    const coverPopup = () => {
         projectPopup.classList.add('hide');
         popupContent[i].classList.add('hide');
         body.style = "overflow-y: scroll";
@@ -164,7 +166,14 @@ seeProjectBtns.forEach((seeProjectBtn, i) => {
     cancelIcon[i].addEventListener('click', coverPopup);
 
 
-})
+});
+
+sideSection.forEach((section, i) => {
+    if ((i + 1) % 2 == 0) {
+        section.classList.add('order1');
+        desktopImageSection[i].classList.add('order2');
+    }
+});
 
 
 
