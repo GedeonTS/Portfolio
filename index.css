@@ -439,7 +439,7 @@ article {
   background-color: #172b4da6;
 }
 
-#popup-overlay {
+.popup-overlay {
   overflow-y: scroll;
   overflow-x: hidden;
   border: solid 1px grey;
@@ -450,6 +450,7 @@ article {
   width: 100%;
   margin-left: 0;
   pointer-events: all;
+  z-index: 999;
 }
 
 .popup-content {
@@ -516,7 +517,7 @@ article {
 }
 
 .body-handle {
-  overflow-y: hidden;
+  
   overflow-x: hidden;
   pointer-events: none;
  
@@ -524,6 +525,8 @@ article {
 
 .blur {
   filter: blur(5px);
+  z-index: -100;
+  pointer-events: none;
 }
 
 .header-handle {
