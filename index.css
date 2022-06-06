@@ -823,7 +823,7 @@ article {
     line-height: 24px;
   }
 
-  #popup-overlay {
+  .popup-overlay {
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #c1c7d0a9;
@@ -897,5 +897,14 @@ article {
   .header-handle {
     position: initial;
   }
+
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
   
 }
