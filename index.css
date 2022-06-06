@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -55,7 +56,6 @@ header {
 }
 
 .headline-section p {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -79,7 +79,6 @@ header {
   width: 150px;
   display: flex;
   list-style: none;
-  margin-left: 0;
   padding-left: 0;
   flex-direction: row;
   justify-content: space-between;
@@ -121,10 +120,6 @@ header {
 
 .hide {
   display: none;
-}
-
-.blur {
-  filter: blur(8px);
 }
 
 .overflow {
@@ -196,10 +191,6 @@ article {
   color: #344563;
 }
 
-.project-descritpion {
-  margin-left: 4.892966%;
-}
-
 .stacks {
   display: flex;
   list-style: none;
@@ -220,6 +211,7 @@ article {
 
 .project-descritpion {
   margin-bottom: 0;
+  margin-left: 4.892966%;
   padding-bottom: 0;
   font-weight: 400;
   font-size: 15px;
@@ -239,6 +231,7 @@ article {
   background: #fff;
   width: 7rem;
   margin-left: 4.892966%;
+  text-decoration: none;
 }
 
 .project-btn:hover {
@@ -371,7 +364,8 @@ article {
 .contact {
   display: flex;
   flex-direction: column;
-  background: hsl(234, 100%, 69%) url(./IMG/shapes-contact-mobile.png) 100% 1%
+  background:
+    hsl(234, 100%, 69%) url(./IMG/shapes-contact-mobile.png) 100% 1%
     no-repeat;
   color: #fff;
   align-items: center;
@@ -492,7 +486,6 @@ article {
   height: 19vh;
 }
 
-
 .project-popup-btns {
   border-top: solid 1px #67798ea1;
   margin-left: 3%;
@@ -520,10 +513,8 @@ article {
 }
 
 .body-handle {
-  
   overflow-x: hidden;
   pointer-events: none;
- 
 }
 
 .blur {
@@ -536,7 +527,7 @@ article {
   display: none;
 }
 
-/* ============================(WIDER SCREENS)==================================*/
+/* ============================(WIDER SCREENS)================================== */
 
 @media screen and (min-width: 768px) {
   header {
@@ -559,7 +550,6 @@ article {
   .logo:hover {
     margin-left: 9%;
     transition: margin-left ease 1s;
-    /* margin-left: 6.4%; */
   }
 
   .humburger {
@@ -568,7 +558,6 @@ article {
 
   .menu {
     list-style: none;
-    font-style: Medium;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
@@ -597,7 +586,8 @@ article {
   }
 
   .headline-section {
-    background: rgb(255, 255, 255) url(./IMG/HeaderWidebg@2x.png) 100% 65px
+    background:
+      rgb(255, 255, 255) url(./IMG/HeaderWidebg@2x.png) 100% 65px
       no-repeat;
     background-size: contain;
     height: 120vh;
@@ -616,7 +606,6 @@ article {
   }
 
   .headline-section p {
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -639,7 +628,6 @@ article {
   .socials {
     width: 150px;
     list-style: none;
-    margin-left: 0;
     padding-left: 0;
     display: flex;
     flex-direction: row;
@@ -686,7 +674,6 @@ article {
     height: 90.32%;
   }
 
- 
   .side-section {
     margin-top: 4.48%;
     margin-right: 4.48%;
@@ -734,8 +721,8 @@ article {
     display: flex;
     margin-left: 0;
     flex-direction: column;
+    border: solid 0.4px #f8f9fa;
     justify-content: space-between;
-    height: 66.72px;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
@@ -765,7 +752,8 @@ article {
   .contact {
     display: flex;
     flex-direction: column;
-    background: hsl(234, 100%, 69%)
+    background:
+      hsl(234, 100%, 69%)
       url(./IMG/contactformbackgroundshapes@2x.png) 100% 100px no-repeat;
     color: #fff;
     justify-items: center;
@@ -849,7 +837,6 @@ article {
     pointer-events: all;
   }
 
-
   .popup-content {
     background-color: #fff;
     border: solid 1px grey;
@@ -860,7 +847,6 @@ article {
     margin-left: 2.5%;
     margin-bottom: 20px;
     border-radius: 20px;
-  
   }
 
   .popup-header {
@@ -887,7 +873,7 @@ article {
   }
 
   .project-popup-btns {
-    border-top: solid 1px #67798ea1;
+    border-top: solid 1px #67798e59;
     margin-left: 3%;
     margin-right: 3%;
     padding-top: 5%;
@@ -895,7 +881,6 @@ article {
     justify-content: center;
   }
 
-  
   .project-btn {
     width: 9rem;
   }
@@ -912,10 +897,12 @@ article {
   .show {
     display: block;
   }
-  
+
   .hide {
     display: none;
   }
-  
-  
+
+  .right-section {
+    margin-right: 2%;
+  }
 }
