@@ -315,6 +315,7 @@ article {
   list-style: none;
   padding-left: 6.4%;
   color: #344563;
+  margin-top: 10%;
 }
 
 .about-second li {
@@ -329,7 +330,7 @@ article {
 }
 
 .languages {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -345,6 +346,13 @@ article {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+
+.languages-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 6.4%;
 }
 
 .list-item {
@@ -633,7 +641,7 @@ article {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left:0;
+    margin-left: 0;
   }
 
   .works {
@@ -710,6 +718,10 @@ article {
   .about-top {
     margin-left: 4%;
     width: 40%;
+  }
+
+  .socials-about {
+    margin-left: 6%;
   }
 
   .languages {
