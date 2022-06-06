@@ -8,7 +8,7 @@ const openPopup = document.querySelector('.humburger');
 const closePopup = document.querySelector('.fa-remove');
 
 const popupLinks = document.querySelectorAll('.popup-link');
-const projectPopup = document.getElementById('popup-overlay');
+const projectPopup = document.querySelector('.popup-overlay');
 
 
 /*   popup events  */
@@ -78,7 +78,7 @@ const projects = [{
     technologies: ["javasCript", "Html", "css"]
 }]
 const workSection = document.querySelector('.works');
-projects.forEach((project,i )=> {
+projects.forEach((project)=> {
     workSection.innerHTML += `<article>
 <img src="${project.imageMobile}" class="card-image-mobile">
 <img src=".${project.imageDesktop}" class="card-image-desktop">
@@ -102,7 +102,7 @@ projects.forEach((project,i )=> {
 </article>`
 
     // project popup section
-    projectPopup.innerHTML = `<div class='popup-content'><div class="popup-header">
+    projectPopup.innerHTML += `<div class='popup-content hide'><div class="popup-header">
     <h2 class="project-title">${project.projectTitle}</h2>
    <div class="canel-icon-wrapper"><img class="cancel-icon" src="./ICONS/cancel-icon.png" alt="cancel-icon"></div>
     </div>
@@ -136,12 +136,19 @@ projects.forEach((project,i )=> {
 })
 
 const seeProjectBtns = document.querySelectorAll('.trigger');
+const popupContent = document.querySelectorAll('.popup-content');
+
+
 
 function myf(){ console.log("see btn pressed") }
 
-seeProjectBtns.forEach(seeProjectBtn => {
+seeProjectBtns.forEach((seeProjectBtn,i) => {
     seeProjectBtn.addEventListener('click', myf);
-function myf(){ console.log("see btn pressed") }
+    function myf() {
+        projectPopup.classList.remove('hide');
+        popupContent[i].classList.remove('hide');
+        body.classList.add('.body-handle');
+ }
 })
 
 
