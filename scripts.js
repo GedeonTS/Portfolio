@@ -1,4 +1,4 @@
-/*   popup menu events  */
+/*   popup elements  */
 const popupMenu = document.querySelector('.popup-menu');
 const body = document.querySelector('body');
 const headSection = document.querySelector('.headline-section');
@@ -8,9 +8,10 @@ const openPopup = document.querySelector('.humburger');
 const closePopup = document.querySelector('.fa-remove');
 
 const popupLinks = document.querySelectorAll('.popup-link');
-const projectPopup = document.getElementById('project-popup');
+const projectPopup = document.getElementById('popup-overlay');
 
 
+/*   popup events  */
 const showPopup = () => {
     popupMenu.classList.remove('hide');
     popupMenu.classList.add('show');
@@ -49,7 +50,7 @@ popupLinks.forEach(link => {
 const projects = [{
     imageMobile: './IMG/SnapshootPortfolio.png',
     imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'Leaderboard',
+    projectTitle: 'the 1st sample',
     stack: 'Front End Dev',
     year: '2022',
     order: 'this is a long descritpion for popup',
@@ -58,7 +59,7 @@ const projects = [{
 }, {
     imageMobile: './IMG/SnapshootPortfolio.png',
     imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'Leaderboard',
+    projectTitle: 'the 2nd sample',
     stack: 'Front End Dev',
     year: '2022',
     order: 'this is a long descritpion for popup',
@@ -68,7 +69,7 @@ const projects = [{
 }, {
     imageMobile:  './IMG/SnapshootPortfolio.png',
     imageDesktop: './IMG/SnapshootPortfolio.png',
-    projectTitle: 'Leaderboard',
+    projectTitle: 'the 3rd sample',
     stack: 'Front End Dev',
     year: '2022',
     order: '',
@@ -77,7 +78,7 @@ const projects = [{
     technologies: ["javasCript", "Html", "css"]
 }]
 const workSection = document.querySelector('.works');
-projects.forEach(project => {
+projects.forEach((project,i )=> {
     workSection.innerHTML += `<article>
 <img src="${project.imageMobile}" class="card-image-mobile">
 <img src=".${project.imageDesktop}" class="card-image-desktop">
@@ -96,12 +97,11 @@ projects.forEach(project => {
 <li class="stack">${project.technologies[1]}</li>
 <li class="stack">${project.technologies[2]}</li>
 </ul>
-<button class="project-btn">See project</button>
+<button class="project-btn trigger">See project</button>
 </section>
 </article>`
 
     // project popup section
-
     projectPopup.innerHTML = `<div class='popup-content'><div class="popup-header">
     <h2 class="project-title">${project.projectTitle}</h2>
    <div class="canel-icon-wrapper"><img class="cancel-icon" src="./ICONS/cancel-icon.png" alt="cancel-icon"></div>
@@ -133,7 +133,16 @@ projects.forEach(project => {
 </div>
 </div>
 `
-
 })
+
+const seeProjectBtns = document.querySelectorAll('.trigger');
+
+function myf(){ console.log("see btn pressed") }
+
+seeProjectBtns.forEach(seeProjectBtn => {
+    seeProjectBtn.addEventListener('click', myf);
+function myf(){ console.log("see btn pressed") }
+})
+
 
 
