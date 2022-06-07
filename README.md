@@ -1,7 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # PORTFOLIO
 
-> This is a website that display a collection of my professional projects with source code and live demo.
+> This is a website that describes me and displays a collection of my professional projects with source code and live demo. It showcases what I have to bring like a software developer such as building prosucts,features and websites . Take a look a my projects and experience and if you like what you see and have a project you need coded, don't hesitate contact me.
+
+| Mobile Version                                                                  | Desktop Version                                           |
+| --------------------------------------------------------------------------------| --------------------------------------------------------- |
+|![Screenshot from 2022-06-07 10-37-54](https://user-images.githubusercontent.com/97834160/172338762-74599d1f-8812-4a0c-b66d-e3224f95db29.png)|![Screenshot from 2022-06-07 10-37-32](https://user-images.githubusercontent.com/97834160/172338531-30868755-9b35-4a56-b52b-72d29eebcd49.png)|
 
 ## Built With
 
@@ -29,7 +33,14 @@ You can have a copy of this repo run on your local machine by just directly clon
 - vscode(or else)
 To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
 
-### Run the following commands to run linter tests
+### Usage
+
+> Open the index.html file with your code editor of your choice and/or a browser of your choice.
+```bash
+Open the project using a live saver extension that can be found into your code editor.
+```
+
+### Run tests
 
 WebHint
 ```bash
@@ -45,10 +56,6 @@ ESLint
 ```bash
 $ npx eslint .
 ```
-
-### Usage
-
-Double click on the file index.html or run live server in vscode
 
 ## Authors
 
@@ -75,11 +82,9 @@ Double click on the file index.html or run live server in vscode
 
 ## 🤝 Contributing
 
-👤 **JauJau088**
-- GitHub: [@JauJau088](https://github.com/JauJau088)
-- Twitter: [@jaujauj](https://twitter.com/jaujauj)
-- LinkedIn: [Jauhari Alafi](https://linkedin.com/in/jauhari-alafi-7295b821a/)
+Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -87,7 +92,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone who helped us.
+- Thank You [Microverse](www.microverse.org) team that help me with the template of this project.
+- Thanks to everyone who will get time to check this code and suggest any issue to improve the page.
 
 ## 📝 License
 
