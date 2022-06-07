@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-Click [here](https://gedeonts.github.io/PORTFOLIO/)
+Click [here](https://gedeonts.github.io/portfolio/)
 
 ## Getting Started
 
