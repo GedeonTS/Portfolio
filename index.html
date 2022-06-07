@@ -1,172 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="index.css" />
-  <title>Gedeon's Portfolio</title>
-</head>
-
-<body>
-<section class="popup-window popup-hide" id="popupWindoW">
-<!-- popup menu area -->
-</section>
-
-  <main>
-
-    <header class="header1" id="headernav">
-
-      <div class="Logo nav-fixing">GedeonTS</div>
-      <nav class="navbar">
-        <i id="open" class="fa fa-navicon menu nav-fixing"></i>
-        <a href="#" class="menu1 squeeze-list">Portfolio</a>
-        <a href="#" class="menu1">About</a>
-        <a href="#" class="menu1">Contact</a>
-      </nav>
-      
-    </header>
-    
-    <div id="close" class="js-menu hide">
-      <a id="canceli" class="hide"><img src="ICONS/Icon-Cancel.png" alt="icon" /></a>
-      <ul class="js-list" id="mobile-menu-list">
-        <li>
-          <a href="#portfolio" class="menu-list" id="elem1">Portfolio</a>
-        </li>
-        <li><a href="#about" class="menu-list" id="elem2">About</a></li>
-        <li>
-          <a href="#contact-me" class="menu-list" id="elem3">Contact</a>
-        </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section class="popup-overlay hide"></section>
+    <div class="popup-menu hide">
+      <i class="fa fa-remove"></i>
+      <ul class="popup-menu-items">
+        <li><a class="popup-link" href="#">Portfolio</a></li>
+        <li><a class="popup-link" href="#about">About</a></li>
+        <li><a class="popup-link" href="#contact">Contact</a></li>
       </ul>
     </div>
-    <section class="section1" id="section1">
-      <h1 class="heading1">
-        I’m Gedeon<br />Glad to see<br class="br" />you!
-      </h1>
-      <h2 class="heading1 heading12">I’m Gedeon<br />Glad to see you!</h2>
-      <p class="par1">
+    <header>
+      <div class="logo">GedeonTS</div>
+      <nav>
+        <i class="fa fa-reorder humburger"></i>
+        <ul class="menu">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="headline-section">
+      <h1>I'm Gedeon Glad to see you!</h1>
+      <p>
         I’m a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
-        you see and have a project you need coded,don’t hestiate to contact
-        me.
+        you see and have a project you need coded, don’t hestiate to contact me.
       </p>
-      <br />
-      <p class="par2">LET'S CONNECT</p>
-      <ul class="social">
+      <h2>LET'S CONNECT</h2>
+      <ul class="socials">
         <li>
-          <a href="#"><img src="ICONS/Vector.png" class="icon" alt="Twitter Handle" /></a>
+          <a href="#"><img src="./ICONS/Vector(1).svg" alt="twitter" /></a>
         </li>
         <li>
-          <a href="#"><img src="ICONS/Linkedin-icon.png" class="icon" alt="Linkedin Handle" /></a>
+          <a href="#"><img src="./ICONS/Linkedinicon.svg" alt="linkedin" /></a>
         </li>
         <li>
-          <a href="#"><img src="ICONS/Vector-(1).png" class="icon" alt="Medium Handle" /></a>
+          <a href="#"><img src="./ICONS/Vector(2).svg" alt="m" /></a>
         </li>
         <li>
-          <a href="#"><img src="ICONS/Vector-(2).png" class="icon" alt="GITHUB Handle" /></a>
+          <a href="#"><img src="./ICONS/Vector(3).svg" alt="github" /></a>
         </li>
         <li>
-          <a href="#"><img src="ICONS/Vector-(3).png" class="icon" alt="Angelist Handle" /></a>
+          <a href="#"><img src="./ICONS/Vector(4).svg" alt="angelist" /></a>
         </li>
       </ul>
     </section>
-    <section class="works" id="middle-section">
-
-   <!-- work section -->
-    
-  </section>
-  
-    <section class="abt">
-      <section class="myself abt1">
-        <h2 class="heading1 hd2" id="about">About<br />Myself</h2>
-        <p class="par1 parx">
-          I’m a software developer! I can help you build a product , feature
-          or website Look through some of my work and experience! If you like
-          what you see and have a project you need coded,don’t hestiate to
+    <section class="works"></section>
+    <section class="about">
+      <div class="about-top">
+        <h2>About Myself</h2>
+        <p>
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
           contact me.
         </p>
-        <br />
-        <p class="par2 par22">LET'S CONNECT</p>
-        <ul class="social social22">
+        <h3>LET'S CONNECT</h3>
+        <ul class="socials-about socials">
           <li>
-            <a href="#"><img src="ICONS/Vector.png" class="icon" alt="Twitter Handle" /></a>
+            <a href="#"><img src="./ICONS/Vector(1).svg" alt="twitter" /></a>
           </li>
           <li>
-            <a href="#"><img src="ICONS/Linkedin-icon.png" class="icon" alt="Linkedin Handle" /></a>
+            <a href="#"
+              ><img src="./ICONS/Linkedinicon.svg" alt="linkedin"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="ICONS/Vector-(1).png" class="icon" alt="Medium Handle" /></a>
+            <a href="#"><img src="./ICONS/Vector(2).svg" alt="m" /></a>
           </li>
           <li>
-            <a href="#"><img src="ICONS/Vector-(2).png" class="icon" alt="GITHUB Handle" /></a>
+            <a href="#"><img src="./ICONS/Vector(3).svg" alt="github" /></a>
           </li>
           <li>
-            <a href="#"><img src="ICONS/Vector-(3).png" class="icon" alt="Angelist Handle" /></a>
+            <a href="#"><img src="./ICONS/Vector(4).svg" alt="angelist" /></a>
           </li>
         </ul>
-        <button class="See-project resume" type="button">
-          Get my resume
-        </button>
-      </section>
-      <section class="myself abt2">
-        <div class="lang">
-          <div class="lan">
-            <a href="#" class="liss1 a">Languages</a><i class="fa fa-angle-down"></i>
-          </div>
-
-          <div class="items">
-            <a href="#" class="liss"><img src="IMG/js.svg" alt="js" />JavaScript</a>
-
-            <a href="#" class="liss"><img src="IMG/css3.svg" alt="html" />HTML</a>
-            <a href="#" class="liss"><img src="IMG/html5.svg" alt="css" />Css</a>
-          </div>
-          <div class="lan">
-            <a href="#" class="liss1 b">Frameworks</a><i class="fa fa-angle-right"></i>
-          </div>
-          <div class="lan">
-            <a href="#" class="liss1 c">Skills</a><i class="fa fa-angle-right"></i>
-          </div>
+        <a class="resume-btn" href="./My-resume.pdf" download>Get my resume</a>
+      </div>
+      <div class="about-second">
+        <div class="languages-topic">
+          <h5>Languages</h5>
+          <img
+            class="arrow-icons"
+            src="https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png"
+            alt="arrow-icons"
+          />
         </div>
-      </section>
+        <ul class="languages">
+          <li>
+            <img
+              src="./IMG/Languages/js.png"
+              alt="image"
+              class="languages-item"
+            />JavasScript
+          </li>
+          <li>
+            <img src="./IMG/Languages/html.png" class="languages-item" 
+            alt="image"/>HTML
+          </li>
+          <li>
+            <img src="./IMG/Languages/js.png" class="languages-item" alt="image"/>CSS
+          </li>
+        </ul>
+        <div class="languages-topic list-item">
+          <h5>Frameworks</h5>
+          <img
+            class="arrow-icons"
+            src="https://img.icons8.com/ios-glyphs/30/undefined/chevron-right.png"
+            alt="image"
+          />
+        </div>
+        <div class="languages-topic list-item">
+          <h5>Skills</h5>
+          <img
+            class="arrow-icons"
+            src="https://img.icons8.com/ios-glyphs/30/undefined/chevron-right.png"
+            alt="image"
+          />
+        </div>
+      </div>
     </section>
-    <section class="myself abt3">
-      <footer class="footer">
-        <form action="https://formspree.io/f/mvolqndo" method="post">
-          <h2 class="contact-header" id="contact-me">Contact me</h2>
-          <div class="contact-content">
-            <p>
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it
-            </p>
-          </div>
-          <div class="inputs">
-            <label class="contact-name">
-              <input id="name" type="text" class="user-input" placeholder="full name" maxlength="30" required />
-            </label>
-            <label id="email" class="contact-email">
-              <input id="email-input" name="email" type="email" class="user-input" placeholder="email adress" required />
-            </label>
-            <label class="contact-message">
-              <textarea id="form-message" name="message" class="message" maxlength="500" required>
-Enter your message here</textarea>
-            </label>
-            <button type="submit" class="btn1 btn10 get">Get in touch</button>
-            <p id="submit-validation-text"></p>
-          </div>
-        </form>
-      </footer>
+    <section class="contact">
+      <h2>Contact me</h2>
+      <p>
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </p>
+      <form action="https://formspree.io/f/mvolqndo" method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="your name"
+          maxlength="30"
+          required
+        />
+        <input type="email" name="name" placeholder="your email" required />
+        <textarea maxlength="500" required>
+write your message here</textarea
+        >
+        <button class="submit-button" type="submit">Get in touch</button>
+      </form>
     </section>
-  </main>
-<<<<<<< HEAD
-  <script src="script.js"></script>
-=======
->>>>>>> local-storage
-</body>
-
+    <script src="./scripts.js"></script>
+  </body>
 </html>
