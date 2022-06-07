@@ -84,7 +84,7 @@ const workSection = document.querySelector('.works');
 projects.forEach((project) => {
   workSection.innerHTML += `<article>
 <img src="${project.imageMobile}" class="card-image-mobile">
-<img src=".${project.imageDesktop}" class="card-image-desktop desktop-image">
+<img src="${project.imageDesktop}" class="card-image-desktop desktop-image">
 <section class="side-section">
 <h2 class="project-title">${project.projectTitle}</h2>
 <ul class="project-highlights">
