@@ -58,13 +58,6 @@ Double click on the file index.html or run live server in vscode
 - Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
 - LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon-73032a228)
 
-## 🤝 Contributing
-
-👤 **JauJau088**
-- GitHub: [@JauJau088](https://github.com/JauJau088)
-- Twitter: [@jaujauj](https://twitter.com/jaujauj)
-- LinkedIn: [Jauhari Alafi](https://linkedin.com/in/jauhari-alafi-7295b821a/)
-
 👤 **kwambiee**
 - GitHub: [@kwambiee](https://github.com/kwambiee)
 - Twitter: [@kwambiee](https://twitter.com/JkKwamboka)
@@ -74,6 +67,19 @@ Double click on the file index.html or run live server in vscode
 - GitHub: [@Kwentsir](https://github.com/Kwentsir)
 - Twitter: [@jkwentsir](https://twitter.com/jkwentsir)
 - LinkedIn: [Kwenstsir](https://linkedin.com/in/)
+
+👤 **JauJau088**
+- GitHub: [@JauJau088](https://github.com/JauJau088)
+- Twitter: [@jaujauj](https://twitter.com/jaujauj)
+- LinkedIn: [Jauhari Alafi](https://linkedin.com/in/jauhari-alafi-7295b821a/)
+
+## 🤝 Contributing
+
+👤 **JauJau088**
+- GitHub: [@JauJau088](https://github.com/JauJau088)
+- Twitter: [@jaujauj](https://twitter.com/jaujauj)
+- LinkedIn: [Jauhari Alafi](https://linkedin.com/in/jauhari-alafi-7295b821a/)
+
 
 ## Show your support
 
