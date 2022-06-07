@@ -117,7 +117,7 @@ projects.forEach((project) => {
 <li>2015</li>
 </ul>
 <img src="${project.imageMobile}" class="card-image-mobile">
-<img src=".${project.imageDesktop}" class="card-image-desktop desktop-popup-image">
+<img src="${project.imageDesktop}" class="card-image-desktop desktop-popup-image">
 <div class="project-content">
 <div class="project-popup-descritpion">
 <p class="project-descritpion">${project.description2}</p>
