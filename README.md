@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # PORTFOLIO
 
-> This is a Website that presente myself as asoftware developer and display a list of my professional project with source code and live demo.
+> This is a Website that display a collection of my professional projects with source code and live demo.
 
 ## Built With
 
