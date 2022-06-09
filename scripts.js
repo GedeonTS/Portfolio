@@ -110,11 +110,11 @@ projects.forEach((project) => {
    <div class="canel-icon-wrapper"><img class="cancel-icon" src="./ICONS/cancel-icon.png" alt="cancel-icon"></div>
     </div>
 <ul class="project-highlights">
-<li>CANOPY</li>
+<li>Microverse</li>
 <li><img class="counter" src="./ICONS/Counter.png"></li>
-<li>Back End Dev</li>
+<li>${project.stack}</li>
 <li><img class="counter" src="./ICONS/Counter.png"></li>
-<li>2015</li>
+<li>${project.year}</li>
 </ul>
 <img src="${project.imageMobile}" class="card-image-mobile">
 <img src="${project.imageDesktop}" class="card-image-desktop desktop-popup-image">
