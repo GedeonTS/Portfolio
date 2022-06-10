@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # PORTFOLIO
 
-> This is a website that describes me and displays a collection of my professional projects with source code and live demo. It showcases what I have to bring like a software developer such as building prosucts,features and websites . Take a look a my projects and experience and if you like what you see and have a project you need coded, don't hesitate contact me.
+> This is a website that describes me and displays a collection of my professional projects with source code and live demo. It showcases what I bring as software developer such as building products,features and websites. Take a look a my projects and experience and if you like what you see and have a project you need coded, don't hesitate contact me.
 
 | Mobile Version                                                                  | Desktop Version                                           |
 | --------------------------------------------------------------------------------| --------------------------------------------------------- |
