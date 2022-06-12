@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+$fontFamily:'Poppins',sans-serif;
+$blueVariant:#396df2;
+
 body {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: "Poppins", sans-serif;
+  font-family: $fontFamily;
   background: #f8f9fa;
 }
 
@@ -222,12 +225,12 @@ article {
 
 .project-btn {
   padding: 0.5rem;
-  border: 1px solid #396df2;
+  border: 1px solid $blueVariant;
   border-radius: 6px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+  color: $blueVariant;
   background: #fff;
   width: 7rem;
   margin-left: 4.892966%;
@@ -236,18 +239,18 @@ article {
 
 .project-btn:hover {
   color: #fff;
-  background: #396df2;
+  background: $blueVariant;
   transition: all ease-out 0.5s;
 }
 
 .resume-btn {
   padding: 0.5rem;
-  border: 1px solid #396df2;
+  border: 1px solid $blueVariant;
   border-radius: 6px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+  color: $blueVariant;
   background: #fff;
   width: 9rem;
   margin-left: 6.4%;
@@ -257,7 +260,7 @@ article {
 
 .resume-btn:hover {
   color: #fff;
-  background: #396df2;
+  background: $blueVariant;
   transition: all ease-out 0.5s;
 }
 
@@ -588,7 +591,7 @@ article {
   }
 
   .menu li a:hover {
-    color: #396df2;
+    color: $blueVariant;
     font-weight: 700;
     transition: all ease-out 0.4s;
   }
