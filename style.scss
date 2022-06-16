@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 $fontFamily:'Poppins',sans-serif;
-$blueVariant:#396df2;
+$blueVariant:#6070ff;
+$blueDark:#2230d2;
 
 body {
   margin: 0;
@@ -243,6 +244,10 @@ article {
   transition: all ease-out 0.5s;
 }
 
+.project-btn:active {
+  background-color: $blueDark;
+}
+
 .resume-btn {
   padding: 0.5rem;
   border: 1px solid $blueVariant;
@@ -262,6 +267,10 @@ article {
   color: #fff;
   background: $blueVariant;
   transition: all ease-out 0.5s;
+}
+
+.resume-btn:active {
+  background-color: $blueDark;
 }
 
 .about {
@@ -536,6 +545,21 @@ article {
 
 .header-handle {
   display: none;
+}
+
+/* ============================(MEDIUM SCREENS)================================== */
+@media screen and (min-width: 375px) {
+  .headline-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url(./IMG/header-shapesmobile.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 100px;
+    margin-top: -1px;
+  }
 }
 
 /* ============================(WIDER SCREENS)================================== */
