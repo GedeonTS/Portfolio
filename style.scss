@@ -2,7 +2,7 @@
 
 $fontFamily:'Poppins',sans-serif;
 $blueVariant:#6070ff;
-$blueActive:#2230d2;
+$blueDark:#2230d2;
 
 body {
   margin: 0;
@@ -245,7 +245,7 @@ article {
 }
 
 .project-btn:active {
-  background-color: $blueActive;
+  background-color: $blueDark;
 }
 
 .resume-btn {
@@ -270,7 +270,7 @@ article {
 }
 
 .resume-btn:active {
-  background-color: $blueActive;
+  background-color: $blueDark;
 }
 
 .about {
