@@ -222,12 +222,12 @@ article {
 
 .project-btn {
   padding: 0.5rem;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 6px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+  color: #6070ff;
   background: #fff;
   width: 7rem;
   margin-left: 4.892966%;
@@ -236,18 +236,22 @@ article {
 
 .project-btn:hover {
   color: #fff;
-  background: #396df2;
+  background: #6070ff;
   transition: all ease-out 0.5s;
+}
+
+.project-btn:active {
+  background-color: #2230d2;
 }
 
 .resume-btn {
   padding: 0.5rem;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 6px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+  color: #6070ff;
   background: #fff;
   width: 9rem;
   margin-left: 6.4%;
@@ -257,8 +261,12 @@ article {
 
 .resume-btn:hover {
   color: #fff;
-  background: #396df2;
+  background: #6070ff;
   transition: all ease-out 0.5s;
+}
+
+.resume-btn:active {
+  background-color: #2230d2;
 }
 
 .about {
@@ -533,6 +541,21 @@ article {
   display: none;
 }
 
+/* ============================(MEDIUM SCREENS)================================== */
+@media screen and (min-width: 375px) {
+  .headline-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url(./IMG/header-shapesmobile.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 100px;
+    margin-top: -1px;
+  }
+}
+
 /* ============================(WIDER SCREENS)================================== */
 @media screen and (min-width: 768px) {
   header {
@@ -585,7 +608,7 @@ article {
   }
 
   .menu li a:hover {
-    color: #396df2;
+    color: #6070ff;
     font-weight: 700;
     transition: all ease-out 0.4s;
   }
