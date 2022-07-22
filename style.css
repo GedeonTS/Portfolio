@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 body {
   margin: 0;
   padding: 0;
@@ -555,7 +554,6 @@ article {
     margin-top: -1px;
   }
 }
-
 /* ============================(WIDER SCREENS)================================== */
 @media screen and (min-width: 768px) {
   header {
@@ -570,20 +568,16 @@ article {
     padding-right: 0;
     align-items: center;
   }
-
   .logo {
     margin-left: 6.4%;
   }
-
   .logo:hover {
     margin-left: 9%;
     transition: margin-left ease 1s;
   }
-
   .humburger {
     display: none;
   }
-
   .menu {
     list-style: none;
     font-size: 15px;
@@ -595,24 +589,20 @@ article {
     padding: 0;
     margin-right: 13.69vw;
   }
-
   .menu li {
     padding-left: 1vw;
   }
-
   .menu li a {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
     text-decoration: none;
   }
-
   .menu li a:hover {
     color: #6070ff;
     font-weight: 700;
     transition: all ease-out 0.4s;
   }
-
   .headline-section {
     background: rgb(255, 255, 255) url(./IMG/HeaderWidebg@2x.png) 100% 65px no-repeat;
     background-size: contain;
@@ -620,7 +610,6 @@ article {
     padding-left: 18.055%;
     padding-right: 18.055%;
   }
-
   .headline-section h1 {
     font-size: 40px;
     line-height: 52px;
@@ -630,7 +619,6 @@ article {
     padding-top: 35%;
     margin-bottom: 0;
   }
-
   .headline-section p {
     font-style: normal;
     font-weight: 400;
@@ -641,7 +629,6 @@ article {
     width: 87.2%;
     margin-left: 0;
   }
-
   .headline-section h2 {
     font-weight: 500;
     font-size: 16px;
@@ -650,7 +637,6 @@ article {
     color: #7f8cff;
     margin-left: 0;
   }
-
   .socials {
     width: 150px;
     list-style: none;
@@ -661,7 +647,6 @@ article {
     align-items: center;
     margin-left: 0;
   }
-
   .works {
     width: 100%;
     display: grid;
@@ -669,14 +654,12 @@ article {
     margin-top: 142px;
     margin-bottom: 26px;
   }
-
   .card-image-mobile {
     display: none;
   }
-
   article {
     width: 87.2%;
-    height: 72.38806vh;
+    height: 62.38806vh;
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -685,13 +668,11 @@ article {
     margin-bottom: 142px;
     box-shadow: 3px 2px 6px rgba(122, 134, 154, 0.4117647059);
   }
-
   article:hover {
     border: solid 1px rgba(57, 109, 242, 0.3647058824);
     box-shadow: 10px 5px 16px rgba(122, 134, 154, 0.4117647059);
     transition: box-shadow 0.5s ease-in-out;
   }
-
   .card-image-desktop {
     display: flex;
     width: 47.05%;
@@ -699,28 +680,23 @@ article {
     margin-top: 2.48%;
     height: 90.32%;
   }
-
   .side-section {
     margin-top: 4.48%;
     margin-right: 4.48%;
     margin-left: 3%;
   }
-
   .order1 {
     order: 1;
   }
-
   .order2 {
     order: 2;
   }
-
   .about-second {
     list-style: none;
     padding-left: 0%;
     width: 49%;
     margin-top: 10%;
   }
-
   .about {
     height: auto;
     width: 100%;
@@ -732,20 +708,16 @@ article {
     padding-top: 0;
     padding-bottom: 133px;
   }
-
   .about-top {
     margin-left: 4%;
     width: 40%;
   }
-
   .socials-about {
     margin-left: 6%;
   }
-
   .languages {
     display: flex;
   }
-
   .languages li {
     background-color: #f8f9fa;
     display: flex;
@@ -759,26 +731,22 @@ article {
     width: 122px;
     height: 120px;
   }
-
   .languages li:hover {
     background-color: rgba(248, 249, 250, 0.6901960784);
     border: solid 0.4px #b3bac5;
     box-shadow: 4px 4px 4px #b3bac5;
     transition: box-shadow ease-in 1s;
   }
-
   .languages-item {
     height: 48px;
     width: 48px;
     margin-top: 1rem;
     margin-left: -2rem;
   }
-
   .socials li img:hover {
     width: 24px;
     height: 24px;
   }
-
   .contact {
     display: flex;
     flex-direction: column;
@@ -792,14 +760,12 @@ article {
     margin: 0;
     padding: 0;
   }
-
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-
   .contact h2 {
     font-weight: 700;
     font-size: 40px;
@@ -807,7 +773,6 @@ article {
     margin-top: 12%;
     margin-bottom: 0;
   }
-
   .contact p {
     font-weight: 400;
     font-size: 20px;
@@ -815,7 +780,6 @@ article {
     width: 45%;
     text-align: center;
   }
-
   .contact input {
     width: 30%;
     height: 48px;
@@ -823,7 +787,6 @@ article {
     margin-bottom: 20px;
     border-radius: 0;
   }
-
   .contact textarea {
     width: 30%;
     height: 170px;
@@ -835,7 +798,6 @@ article {
     margin-left: 0;
     line-height: 24px;
   }
-
   .submit-button {
     height: 3rem;
     width: 9rem;
@@ -849,7 +811,6 @@ article {
     font-size: 17px;
     line-height: 24px;
   }
-
   .popup-overlay {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -864,7 +825,6 @@ article {
     margin-left: 0;
     pointer-events: all;
   }
-
   .popup-content {
     background-color: #fff;
     border: solid 1px grey;
@@ -876,7 +836,6 @@ article {
     margin-bottom: 20px;
     border-radius: 20px;
   }
-
   .popup-header {
     display: flex;
     flex-direction: row;
@@ -886,20 +845,16 @@ article {
     margin-right: 3%;
     margin-bottom: 14px;
   }
-
   .desktop-popup-image {
     width: 96%;
     height: 55%;
   }
-
   .project-popup-descritpion {
     height: 19%;
   }
-
   .project-content {
     display: flex;
   }
-
   .project-popup-btns {
     border-top: solid 1px rgba(103, 121, 142, 0.3490196078);
     margin-left: 3%;
@@ -908,29 +863,23 @@ article {
     display: flex;
     justify-content: center;
   }
-
   .project-btn {
     width: 9rem;
   }
-
   .cancel-icon:hover {
     transform: rotate(180deg);
     transition: all 0.7s ease;
   }
-
   .header-handle {
     position: initial;
   }
-
   .show {
     display: block;
   }
-
   .hide {
     display: none;
   }
-
   .right-section {
     margin-right: 2%;
   }
-}
+}/*# sourceMappingURL=style.css.map */
