@@ -554,6 +554,7 @@ article {
     margin-top: -1px;
   }
 }
+
 /* ============================(WIDER SCREENS)================================== */
 @media screen and (min-width: 768px) {
   header {
@@ -629,6 +630,7 @@ article {
   .menu li a:hover {
     color: #6070ff;
     text-decoration: underline;
+
     transition: all ease-out 0.4s;
   }
   .headline-section {
