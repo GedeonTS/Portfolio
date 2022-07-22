@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-Click [here](https://gedeonts.github.io/portfolio/)
+Click [here](https://portfoliogts.netlify.app/)
 
 ## Getting Started
 
