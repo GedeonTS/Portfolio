@@ -583,18 +583,24 @@ article {
   }
 
   .logo:hover {
-  animation: logo-hover 3s infinite;
+    animation: logo-hover 3s infinite;
   }
 
   @keyframes logo-hover {
-    0%{margin-left: 6.4%;
+    0% {
+      margin-left: 6.4%;
       font-size: 1.1rem;
     }
-    50%{margin-left: 8.4%;
-      font-size: 1rem;}
-    100%{margin-left: 6.4%;
-      font-size: 1.1rem;}
 
+    50% {
+      margin-left: 8.4%;
+      font-size: 1rem;
+    }
+
+    100% {
+      margin-left: 6.4%;
+      font-size: 1.1rem;
+    }
   }
 
   .humburger {
@@ -660,7 +666,7 @@ article {
     margin-bottom: 0;
     width: 87.2%;
     margin-left: 0;
-    animation:right 2s 1;
+    animation: right 2s 1;
   }
 
   .headline-section h2 {
@@ -708,13 +714,13 @@ article {
   }
 
   @keyframes left {
-    from{margin-left:-20rem;}
-    to{margin-left:0;}
+    from { margin-left: -20rem; }
+    to { margin-left: 0; }
   }
 
   @keyframes right {
-    from{margin-left:20rem;}
-    to{margin-right:0;}
+    from { margin-left: 20rem; }
+    to { margin-right: 0; }
   }
 
   article:hover {
