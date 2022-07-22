@@ -576,8 +576,42 @@ article {
   }
 
   .logo:hover {
-    margin-left: 9%;
-    transition: margin-left ease 1s;
+    -webkit-animation: logo-hover 3s infinite;
+    animation: logo-hover 3s infinite;
+  }
+
+  @-webkit-keyframes logo-hover {
+    0% {
+      margin-left: 6.4%;
+      font-size: 1.1rem;
+    }
+
+    50% {
+      margin-left: 8.4%;
+      font-size: 1rem;
+    }
+
+    100% {
+      margin-left: 6.4%;
+      font-size: 1.1rem;
+    }
+  }
+
+  @keyframes logo-hover {
+    0% {
+      margin-left: 6.4%;
+      font-size: 1.1rem;
+    }
+
+    50% {
+      margin-left: 8.4%;
+      font-size: 1rem;
+    }
+
+    100% {
+      margin-left: 6.4%;
+      font-size: 1.1rem;
+    }
   }
 
   .humburger {
@@ -609,7 +643,7 @@ article {
 
   .menu li a:hover {
     color: #6070ff;
-    font-weight: 700;
+    text-decoration: underline;
     transition: all ease-out 0.4s;
   }
 
@@ -629,6 +663,8 @@ article {
     margin-left: 0;
     padding-top: 35%;
     margin-bottom: 0;
+    -webkit-animation: left 1s 1;
+    animation: left 1s 1;
   }
 
   .headline-section p {
@@ -640,6 +676,8 @@ article {
     margin-bottom: 0;
     width: 87.2%;
     margin-left: 0;
+    -webkit-animation: right 2s 1;
+    animation: right 2s 1;
   }
 
   .headline-section h2 {
@@ -676,7 +714,7 @@ article {
 
   article {
     width: 87.2%;
-    height: 72.38806vh;
+    height: 62.38806vh;
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -684,6 +722,46 @@ article {
     padding-right: 2.892966%;
     margin-bottom: 142px;
     box-shadow: 3px 2px 6px rgba(122, 134, 154, 0.4117647059);
+  }
+
+  @-webkit-keyframes left {
+    from {
+      margin-left: -20rem;
+    }
+
+    to {
+      margin-left: 0;
+    }
+  }
+
+  @keyframes left {
+    from {
+      margin-left: -20rem;
+    }
+
+    to {
+      margin-left: 0;
+    }
+  }
+
+  @-webkit-keyframes right {
+    from {
+      margin-left: 20rem;
+    }
+
+    to {
+      margin-right: 0;
+    }
+  }
+
+  @keyframes right {
+    from {
+      margin-left: 20rem;
+    }
+
+    to {
+      margin-right: 0;
+    }
   }
 
   article:hover {
