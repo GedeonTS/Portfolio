@@ -78,7 +78,19 @@ const projects = [{
   description2: 'math-magician is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote',
   description: 'math-magician is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote',
   technologies: ['javasCript', 'Html', 'css'],
-}];
+}, {
+  imageMobile: './IMG/projects/air.png',
+  imageDesktop: './IMG/projects/air.png',
+  projectTitle: 'Air quality',
+  stack: 'Front End Dev',
+  year: '2022',
+  demo: 'https://air-quality-monitoring-a.netlify.app/',
+  source: 'https://github.com/GedeonTS/air-quality-monitor-app',
+  description: 'A single page mobile application(SPA) that provides air pollution data from European capitals,',
+  description2: 'A single page mobile application(SPA) that provides air pollution data from European capitals, using the the air pollution API that provides the amount of CO,NH3,NO,NO2,O3 and most importantly the PM2_5,PM10,SO2.',
+  technologies: ['javasCript', 'React', 'css'],
+},
+];
 
 const workSection = document.querySelector('.works');
 projects.forEach((project) => {
