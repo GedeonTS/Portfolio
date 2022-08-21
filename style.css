@@ -541,6 +541,19 @@ article {
   display: none;
 }
 
+.technical-skill {
+  background: #ebebff;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 0.4rem;
+  letter-spacing: 0.03em;
+  padding: 0.4rem;
+  margin-bottom: 1px;
+  border-radius: 8px;
+}
+
 /* ============================(MEDIUM SCREENS)================================== */
 @media screen and (min-width: 375px) {
   .headline-section {
