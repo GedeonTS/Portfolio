@@ -182,3 +182,165 @@ sideSection.forEach((section, i) => {
     desktopImageSection[i].classList.add('order2');
   }
 });
+
+const formName = document.querySelector('.form-name');
+const formNameValue = localStorage.getItem('formName');
+
+if (formNameValue) {
+  formName.value = formNameValue;
+}
+
+formName.addEventListener('input', (e) => {
+  localStorage.setItem('formName', e.target.value);
+});
+
+const formEmail = document.querySelector('.form-email');
+const formEmailValue = localStorage.getItem('formEmail');
+
+if (formEmailValue) {
+  formEmail.value = formEmailValue;
+}
+
+formEmail.addEventListener('input', (e) => {
+  localStorage.setItem('formEmail', e.target.value);
+});
+
+formName.addEventListener('input', (e) => {
+  localStorage.setItem('formName', e.target.value);
+});
+
+const formText = document.querySelector('.form-text');
+const formTextValue = localStorage.getItem('formText');
+
+if (formTextValue) {
+  formText.value = formTextValue;
+}
+
+formText.addEventListener('input', (e) => {
+  formText.style.color = '#000';
+  localStorage.setItem('formText', e.target.value);
+});
+
+const AboutSection = document.querySelector('.about-second');
+AboutSection.innerHTML = ` <div class="languages-topic list-item">
+<h5>Languages</h5>
+<img
+  class="arrow-icons arrow-down hide"
+  src="https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png"
+  alt="arrow-icons"
+/>
+<img
+  class="arrow-icons arrow-right"
+  src="https://img.icons8.com/ios-glyphs/30/undefined/chevron-right.png"
+  alt="image"
+/>
+</div>
+<ul class="languages contents hide">
+<li>
+  <img
+    src="./IMG/Languages/js.png"
+    alt="image"
+    class="languages-item"
+  />JavasScript
+</li>
+<li>
+  <img
+    src="./IMG/ruby.png"
+    alt="image"
+    class="languages-item"
+  />Ruby
+</li>
+<li>
+  <img src="./IMG/Languages/html.png" class="languages-item" 
+  alt="image"/>HTML
+</li>
+<li>
+  <img src="./IMG/Languages/js.png" class="languages-item" alt="image"/>CSS
+</li>
+</ul>
+<div class="languages-topic list-item">
+<h5>Frameworks</h5>
+<img
+  class="arrow-icons arrow-down hide"
+  src="https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png"
+  alt="arrow-icons"
+/>
+<img
+  class="arrow-icons arrow-right"
+  src="https://img.icons8.com/ios-glyphs/30/undefined/chevron-right.png"
+  alt="image"
+/>
+</div><ul class="languages contents hide">
+
+<li>
+  <img src="./IMG/rubyonrails.png" class="languages-item" alt="image"/>Ruby on Rails
+</li>
+<li>
+  <img src="./IMG/express.png" class="languages-item" alt="image"/>Express
+</li>
+</ul>
+<div class="languages-topic list-item">
+<h5>Skills</h5>
+<img
+  class="arrow-icons arrow-down hide"
+  src="https://img.icons8.com/ios-filled/50/undefined/expand-arrow--v1.png"
+  alt="arrow-icons"
+/>
+<img
+  class="arrow-icons arrow-right"
+  src="https://img.icons8.com/ios-glyphs/30/undefined/chevron-right.png"
+  alt="image"
+/>
+</div>
+<div class=" languages contents hide">
+<div class="technical-skill">
+ React,Redux, Ruby on Rails,postgresql
+</div>
+<div class="technical-skill">
+ Effective Communication
+</div>
+<div class="technical-skill">
+ Working in Teams
+</div>
+<div class="technical-skill">
+  Problem Solving
+</div>
+<div class="technical-skill">
+  Adaptability
+</div>
+<div class="technical-skill">
+  Leadership
+</div>
+<div class="technical-skill">
+  Creativity
+</div>
+</div>`;
+
+const downArrows = document.querySelectorAll('.arrow-down');
+const rightArrows = document.querySelectorAll('.arrow-right');
+const contents = document.querySelectorAll('.contents');
+const languagesTopic = document.querySelectorAll('.languages-topic');
+
+languagesTopic.forEach((topic, i) => {
+  topic.addEventListener('click', () => {
+    if (downArrows[i].classList.contains('hide')) {
+      downArrows.forEach((downArrow, i) => {
+        if (!downArrow.classList.contains('hide')) {
+          downArrow.classList.add('hide');
+          languagesTopic[i].classList.add('list-item');
+          contents[i].classList.add('hide');
+          rightArrows[i].classList.remove('hide');
+        }
+      });
+      downArrows[i].classList.remove('hide');
+      rightArrows[i].classList.add('hide');
+      topic.classList.remove('list-item');
+      contents[i].classList.remove('hide');
+    } else {
+      downArrows[i].classList.add('hide');
+      rightArrows[i].classList.remove('hide');
+      topic.classList.add('list-item');
+      contents[i].classList.add('hide');
+    }
+  });
+});
