@@ -46,16 +46,16 @@ popupLinks.forEach((link) => {
 
 // works section
 const projects = [{
-  imageMobile: './IMG/projects/Leaderboard.png',
-  imageDesktop: './IMG/projects/Leaderboard.png',
-  projectTitle: 'Leaderboard',
-  stack: 'Front End Dev',
+  imageMobile: './IMG/projects/recipeLight.png',
+  imageDesktop: './IMG/projects/RecipeImage.png',
+  projectTitle: 'Recipe App',
+  stack: 'Full Stack Dev',
   year: '2022',
-  demo: 'https://gedeonts.github.io/Leaderboard_App/',
-  source: 'https://github.com/GedeonTS/Leaderboard_App',
-  description2: 'A website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to an external API service',
-  description: 'A website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to an external API service',
-  technologies: ['javasCript', 'Html', 'css'],
+  demo: 'https://recipe-gedeonts.herokuapp.com/',
+  source: 'https://github.com/GedeonTS/Recipe-app',
+  description2: 'An app that keeps track of all your recipes, ingredients, and inventory. It also allows you to create a shopping list based on the recipes you want to cook.',
+  description: 'An app that keeps track of all your recipes, ingredients, and inventory. It also allows you to create a shopping list based on the recipes you want to cook.',
+  technologies: ['Ruby', 'Rails', 'PostgresSQL'],
 }, {
   imageMobile: './IMG/projects/movie-website.png',
   imageDesktop: './IMG/projects/movie-website.png',
