@@ -46,8 +46,8 @@ popupLinks.forEach((link) => {
 
 // works section
 const projects = [{
-  imageMobile: './IMG/projects/recipeLight.png',
-  imageDesktop: './IMG/projects/RecipeImage.png',
+  imageMobile: 'https://user-images.githubusercontent.com/97834160/190992022-3d9f5d7d-a3e5-4cac-aa92-a732227ff8ee.png',
+  imageDesktop: 'https://user-images.githubusercontent.com/97834160/190992022-3d9f5d7d-a3e5-4cac-aa92-a732227ff8ee.png',
   projectTitle: 'Recipe App',
   stack: 'Full Stack Dev',
   year: '2022',
