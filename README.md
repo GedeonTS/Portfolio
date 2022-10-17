@@ -9,7 +9,9 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML
+- CSS/SCSS
+- JavaScript
 
 ## Live Demo
 
