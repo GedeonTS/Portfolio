@@ -59,13 +59,15 @@ ESLint
 $ npx eslint .
 ```
 
-## Authors
+## Author
 
 👤 **GedeonTS**
 
 - GitHub: [@GedeonTS](https://github.com/GedeonTS)
 - Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
 - LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon-73032a228)
+
+## Contributors
 
 👤 **kwambiee**
 - GitHub: [@kwambiee](https://github.com/kwambiee)
