@@ -80,18 +80,8 @@ const projects = [
     description2: 'A website which displays a list of movies and allows the user to leave a comment and like.',
     description: 'A website that displays a list of movies and allows the user to leave a comment and like.',
     technologies: ['javasCript', 'Html', 'css'],
-  }, {
-    imageMobile: './IMG/projects/math-magician.png',
-    imageDesktop: './IMG/projects/math-magician.png',
-    projectTitle: 'Math magicians',
-    stack: 'Front End Dev',
-    year: '2022',
-    demo: 'https://math-magician-gedeonts.netlify.app/',
-    source: 'https://github.com/GedeonTS/math-magician',
-    description2: 'math-magician is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote',
-    description: 'math-magician is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote',
-    technologies: ['javasCript', 'Html', 'css'],
-  }, {
+  },
+   {
     imageMobile: './IMG/projects/air.png',
     imageDesktop: './IMG/projects/air.png',
     projectTitle: 'Air quality',
@@ -258,6 +248,20 @@ AboutSection.innerHTML = ` <div class="languages-topic list-item">
 </li>
 <li>
   <img
+    src="./IMG/php.png"
+    alt="image"
+    class="languages-item"
+  />PHP
+</li>
+<li>
+  <img
+    src="./IMG/python.png"
+    alt="image"
+    class="languages-item"
+  />python
+</li>
+<li>
+  <img
     src="./IMG/ruby.png"
     alt="image"
     class="languages-item"
@@ -287,6 +291,9 @@ AboutSection.innerHTML = ` <div class="languages-topic list-item">
 
 <li>
   <img src="./IMG/rubyonrails.png" class="languages-item" alt="image"/>Ruby on Rails
+</li>
+<li>
+  <img src="./IMG/react.png" class="languages-item" alt="image"/>React/React Native
 </li>
 <li>
   <img src="./IMG/express.png" class="languages-item" alt="image"/>Express
