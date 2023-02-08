@@ -726,8 +726,9 @@ article {
   }
 
   article {
-    width: 87.2%;
-    height: 62.38806vh;
+    width: 70%;
+    height: auto;
+    min-height: 400px;
     display: flex;
     flex-direction: row;
     background-color: #fff;
